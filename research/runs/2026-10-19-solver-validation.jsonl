@@ -1,4 +1,4 @@
-{"provenance": {"seed": 0, "grid_n": [80, 160], "directions": [64, 256, 1024], "particles": 10000, "git_commit": "HEAD", "dirty": true, "python": "3.13.12", "versions": {"numpy": "2.5.4", "scipy": "1.18.1", "swcrit": "0"}}}
+{"provenance": {"seed": 0, "grid_n": [80, 160], "directions": [64, 256, 1024], "particles": 10000, "git_commit": "c804dcb66cafa9ec22d23c7cc277827a390376e5", "dirty": false, "python": "3.13.12", "versions": {"numpy": "2.5.4", "scipy": "1.18.1", "swcrit": "0"}}}
 {"check": "a: mu = rho", "case": "disc", "n": 80, "L": 64, "J": 9.10164658171547e-25}
 {"check": "a: mu = rho", "case": "two-discs", "n": 80, "L": 64, "J": 4.7517385881874e-25}
 {"check": "a: mu = rho", "case": "square-frame", "n": 80, "L": 64, "J": 1.4246578733674816e-24}
