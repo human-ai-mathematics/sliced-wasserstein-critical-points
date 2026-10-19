@@ -1,8 +1,3 @@
-# The three forms below, and a line for contributors who prefer e-mail. The repository
-# does not use Discussions; the template's link and forms were removed.
-# TODO: the contact address below.
+# The three forms below. The repository uses neither Discussions nor a contact address:
+# the template's links to both were removed.
 blank_issues_enabled: true
-contact_links:
-  - name: Write by e-mail
-    url: mailto:<contact email>
-    about: For a contribution you would rather send privately.

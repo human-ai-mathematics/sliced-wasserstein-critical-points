@@ -2,7 +2,6 @@
 % directive in modules/ is a ledger node with the same id (SPECIFICATION.md, Formats →
 % Ledger); its content is fixed, the prose around it is the writer's (Manuscript). The
 % status next to each statement is displayed from the ledger: the prose never states one.
-% TODO: a contact address, here and in .github/ISSUE_TEMPLATE/config.yml.
 
 (sec:overview)=
 # Orientation

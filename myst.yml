@@ -14,9 +14,8 @@ project:
     content: CC-BY-4.0
     code: MIT
   authors:
-    # TODO: the maintainer's name, to confirm.
-    - name:
-        literal: <author>
+    - name: Nicolas Brosse
+      roles: [Project administration]
   # Each statement links to the issue forms of .github/ISSUE_TEMPLATE with its label filled in.
   github: https://github.com/human-ai-mathematics/sliced-wasserstein-critical-points
   # The shared bibliography. A literature node's `references:` keys must
