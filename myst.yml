@@ -1,0 +1,63 @@
+# The MyST project: the manuscript (modules/) and the full proofs (solutions/).
+#
+#   npx myst start           # read it locally, live
+#   npx myst build --html    # the static site, as pages.yml publishes it
+#
+# `uv run scripts/check.py` builds the project and reads its AST: every labelled claim
+# directive under modules/ is a ledger node with the same id.
+version: 1
+project:
+  title: Critical points of the sliced Wasserstein distance
+  subtitle: Is every absolutely continuous critical point of the squared sliced Wasserstein distance to a target the target itself?
+  # Text under CC BY 4.0, code under MIT: see LICENSE.
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  authors:
+    # TODO: the maintainer's name, to confirm.
+    - name:
+        literal: <author>
+  # The repository, e.g. https://github.com/<owner>/<repo>. Once set, each statement links
+  # to the issue forms of .github/ISSUE_TEMPLATE with its label filled in.
+  # github: <repository URL>
+  # The shared bibliography. A literature node's `references:` keys must
+  # exist here. It ships empty: MyST refuses a .bib holding only comments.
+  bibliography:
+    - references.bib
+  # Macros for every module and dossier. A fixed normalization is a `definition` node,
+  # not only a macro.
+  math:
+    # --- core macros (domain-neutral)
+    '\R': '\mathbb{R}'
+    '\E': '\mathbb{E}'
+    '\Prob': '\mathbb{P}'
+    '\one': '\mathbf{1}'
+    '\eps': '\varepsilon'
+    '\dd': '\,\mathrm{d}'
+    '\norm': '\left\lVert #1\right\rVert'
+    '\abs': '\left\lvert #1\right\rvert'
+    '\inner': '\left\langle #1,#2\right\rangle'
+    # --- program macros
+    '\SW': '\mathrm{SW}'
+    '\Ptwo': '\mathcal{P}_2(\R^{#1})'
+    '\Sph': '\mathbb{S}^{#1}'
+    '\Leb': '\mathcal{L}'
+    '\law': '\mathrm{law}'
+    '\Id': '\mathrm{Id}'
+  # Each statement shows its status, read from the ledger, and its label: see
+  # scripts/status.mjs.
+  plugins:
+    - scripts/status.mjs
+  # The manuscript comes first, then the full proofs. A pattern that matches nothing is
+  # an error, so the proofs' pattern also matches their introduction page:
+  # '{proofs,solutions/*}.md' reads "proofs.md, then every dossier". Drafts are listed
+  # here for local reading; the pages workflow removes them before it publishes.
+  toc:
+    - pattern: 'modules/!(README).md'
+    - title: Full proofs
+      children:
+        - pattern: '{proofs,solutions/*}.md'
+site:
+  template: book-theme
+  options:
+    logo_text: SW critical points

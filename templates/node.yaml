@@ -1,0 +1,9 @@
+# Paste under `nodes:` in research/program/ledger.yaml. The statement lives in modules/
+# under `:label: conj:main`; fields: SPECIFICATION.md, Formats → Ledger.
+
+  - id: conj:main
+    status: open              # open | proved | refuted | defined (prf:definition only)
+    # depends_on: []          # statement-level proof DAG; not proof-independence evidence
+    # assumes: []             # antecedents a proved implication may leave open
+    # bounded_by: []          # fences: binding if proved, a guide if open
+    # references: []          # BibTeX keys; established results need no proofs

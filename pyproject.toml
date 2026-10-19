@@ -1,0 +1,9 @@
+# The checker's Python dependency; `uv run scripts/check.py` provisions it.
+[project]
+name = "conjecture-search-harness"
+version = "0"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6"]
+
+[tool.uv]
+package = false

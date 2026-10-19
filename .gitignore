@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.env
+
+# MyST
+_build/
+node_modules/
+
+# Editors
+.idea/
+.vscode/
+
+# Agent clients: ignore local state, keep the project's role definitions.
+.claude/*
+!.claude/agents/
+!.claude/agents/**

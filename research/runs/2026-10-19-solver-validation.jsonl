@@ -1,0 +1,19 @@
+{"provenance": {"seed": 0, "grid_n": [80, 160], "directions": [64, 256, 1024], "particles": 10000, "git_commit": "HEAD", "dirty": true, "python": "3.13.12", "versions": {"numpy": "2.5.4", "scipy": "1.18.1", "swcrit": "0"}}}
+{"check": "a: mu = rho", "case": "disc", "n": 80, "L": 64, "J": 9.10164658171547e-25}
+{"check": "a: mu = rho", "case": "two-discs", "n": 80, "L": 64, "J": 4.7517385881874e-25}
+{"check": "a: mu = rho", "case": "square-frame", "n": 80, "L": 64, "J": 1.4246578733674816e-24}
+{"check": "c: smaller disc", "n": 80, "L": 128, "J": 0.21501160706441566}
+{"check": "a: mu = rho", "case": "disc", "n": 160, "L": 64, "J": 3.5294200234145996e-24}
+{"check": "a: mu = rho", "case": "two-discs", "n": 160, "L": 64, "J": 1.8525803265520414e-24}
+{"check": "a: mu = rho", "case": "square-frame", "n": 160, "L": 64, "J": 6.419640732543837e-24}
+{"check": "c: smaller disc", "n": 160, "L": 128, "J": 0.2166748635163464}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.0, "L": 64, "N": 10000, "J": 1.0895499116685286e-08}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.2, "L": 64, "N": 10000, "J": 0.043186976322789505}
+{"check": "b: Gaussian segment", "bears_on": "prop:critical-segments", "L": 64, "N": 10000, "J": 8.170546394863568e-09}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.0, "L": 256, "N": 10000, "J": 4.255493394892155e-11}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.2, "L": 256, "N": 10000, "J": 0.04322765861219449}
+{"check": "b: Gaussian segment", "bears_on": "prop:critical-segments", "L": 256, "N": 10000, "J": 3.191198376224145e-11}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.0, "L": 1024, "N": 10000, "J": 1.6622875875503654e-13}
+{"check": "b: sliced-uniform segment", "bears_on": "prop:critical-segments", "dilation": 1.2, "L": 1024, "N": 10000, "J": 0.043230201713159555}
+{"check": "b: Gaussian segment", "bears_on": "prop:critical-segments", "L": 1024, "N": 10000, "J": 1.2465468894468344e-13}
+{"check": "d: critical sphere, d = 3", "bears_on": "prop:critical-sphere", "r_star": 1.6925687506402445, "three_over_sqrt_pi": 1.692568750643269, "difference": -3.0244695636838514e-12}

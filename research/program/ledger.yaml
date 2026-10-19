@@ -1,0 +1,70 @@
+# The claim graph: what is mathematically claimed. Only the orchestrator writes this file,
+# and `uv run scripts/check.py` must return 0 errors afterwards. Fields: SPECIFICATION.md,
+# Formats → Ledger.
+#
+# The four statements of the 17 October 2026 scouting (prop:notions-coincide,
+# thm:gaussian-target, thm:radial-d3, thm:radial-disc-d2) have written arguments in
+# ensae-conjecture-scouting/verification/13-korba-sw/ but no certification here: they stay
+# open until a dossier passes a fresh review or a named human accepts it.
+
+nodes:
+
+  # --- normalizations
+  - id: def:sliced-wasserstein
+    status: defined
+
+  - id: def:barycentric-field
+    status: defined
+    depends_on: [def:sliced-wasserstein]
+
+  - id: def:critical-point
+    status: defined
+    depends_on: [def:barycentric-field]
+
+  # --- the target
+  - id: conj:sw-critical
+    status: open
+    depends_on: [def:critical-point]
+    bounded_by: [prop:critical-segments, prop:critical-sphere]
+
+  # --- the setting
+  - id: prop:notions-coincide
+    status: open
+    depends_on: [def:critical-point]
+
+  # --- singular critical points, from the literature
+  - id: prop:critical-segments
+    status: proved
+    depends_on: [def:critical-point]
+    references: [VauthierKorbaMerigot2025]
+
+  # A preprint (6 October 2026): "Preprint, not yet checked here".
+  - id: prop:critical-sphere
+    status: open
+    depends_on: [def:critical-point]
+    references: [DiazMartinMurphy2026]
+
+  # --- special cases
+  - id: thm:bonnotte-full-support
+    status: proved
+    depends_on: [def:critical-point]
+    references: [Bonnotte2013, VauthierKorbaMerigot2025]
+
+  # The flow theorem is Cozzi–Santambrogio's; its consequence for critical points is drawn
+  # in VKM §7. Both refereed. Superseded by thm:gaussian-target once that is certified.
+  - id: thm:cs-isotropic
+    status: proved
+    depends_on: [def:critical-point]
+    references: [CozziSantambrogio2025, VauthierKorbaMerigot2025]
+
+  - id: thm:gaussian-target
+    status: open
+    depends_on: [def:critical-point]
+
+  - id: thm:radial-d3
+    status: open
+    depends_on: [def:critical-point]
+
+  - id: thm:radial-disc-d2
+    status: open
+    depends_on: [def:critical-point]

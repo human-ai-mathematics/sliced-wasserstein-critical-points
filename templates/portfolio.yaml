@@ -1,0 +1,15 @@
+# Copy to research/program/portfolio.yaml when the first route starts. Only the
+# orchestrator writes it. Format: SPECIFICATION.md, Formats → Portfolio.
+# A proved target may retain active routes for alternative proofs or stronger results;
+# say what remains in objective/next. A refuted target leaves no active proof route.
+# Closing an accomplished objective differs from closing a proved impossibility:
+# record the reason in a checkpoint. Settled blockers still require reassessment.
+
+approaches:
+  - id: ap:main-route
+    objective: >-
+      One sentence saying what this route tries — an intention, never a claim.
+    state: active             # active | blocked | closed
+    # blocker: cand:slug      # required when blocked: a node id or a live candidate id
+    # reopen_if: >-           # only if more than "the blocker is settled" reopens it
+    # next: >-                # the discriminating test this route would run next

@@ -1,0 +1,67 @@
+# Publish the manuscript and the certified dossiers to GitHub Pages, on manual dispatch
+# only. The draft dossiers are removed first; then the checker runs, so a structurally
+# invalid revision publishes nothing. A person reads the manuscript before dispatching.
+# Before the first run, enable Settings → Pages → Source: GitHub Actions.
+
+name: pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install MyST
+        run: npm ci
+
+      # A draft dossier — one no proof record names — is not published. Removing it from
+      # this checkout before the check means a page that still links to it fails the build.
+      - name: Leave out the draft dossiers
+        run: |
+          set -o pipefail
+          uv run scripts/check.py --drafts | xargs -r rm -v --
+
+      - name: Validate the repository
+        run: uv run scripts/check.py
+
+      # A project site is served under /<repository>/, and MyST has to know it.
+      - name: Build the site
+        run: npx myst build --html
+        env:
+          BASE_URL: /${{ github.event.repository.name }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _build/html
+
+  deploy:
+    # Only the default branch publishes; other branches build and stop.
+    if: github.ref_name == github.event.repository.default_branch
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

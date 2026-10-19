@@ -1,0 +1,55 @@
+# What the search is doing — as against research/program/ledger.yaml, which records what
+# is mathematically claimed. SPECIFICATION.md, Formats → Portfolio. Entries are ordered by
+# priority, set in the founding checkpoint of 2026-10-19; the order carries no truth value.
+
+approaches:
+  - id: ap:certify-scouting
+    objective: >-
+      Turn the four scouting arguments (prop:notions-coincide, thm:gaussian-target,
+      thm:radial-d3, thm:radial-disc-d2) into dossiers and certify each by a fresh
+      reviewer, so that later routes can cite them. This also runs the certification cycle
+      once before a mathematician is contacted.
+    state: active
+    next: >-
+      Start with thm:gaussian-target, the strongest: a researcher (lens prove) writes
+      solutions/thm-gaussian-target.md from the scouting files C-gaussiennes-anisotropes.md
+      and C-relecture-adverse.md, writing out the Fubini and measurability step of its §4;
+      then a fresh reviewer with the certify lens, including the sphere test of the brief.
+
+  - id: ap:radial-annulus-d2
+    objective: >-
+      Decide cand:annulus-d2: whether the non-local sign condition left by the Abel equation
+      on an annulus forces the monotone map to be the identity.
+    state: active
+    next: >-
+      Write the positivity of the inverse Abel transform in the hole as a linear constraint
+      on U and look for a dual certificate on a discretization; a certificate suggests a
+      proof, its failure a candidate counterexample to examine by hand.
+
+  - id: ap:radial-odd-d
+    objective: >-
+      Settle the radial case in odd dimension d ≥ 5 through cand:odd-d-sign-changes.
+    state: active
+    next: >-
+      d = 5: on a hole (a, b), h(a) = h(b) = 0 and h is orthogonal to u and u³; test whether
+      h = Q_{ρ₁} ∘ F_{µ₁} − Id, with F_{µ₁} quadratic-concave on the hole, can change sign
+      more than once.
+
+  - id: ap:non-gaussian-targets
+    objective: >-
+      Extend the dissipation argument of thm:gaussian-target beyond Gaussian targets, with a
+      matrix field M(x) or for log-concave targets, against cand:score-gluing-gaussian.
+    state: active
+    next: >-
+      Determine all matrix fields M(x) with θᵀM(x)θ a function of ⟨x, θ⟩ only; if they are
+      only constants, the obstacle is proved and the route needs a different test family.
+
+  - id: ap:small-mass-hole
+    objective: >-
+      Look for an absolutely continuous counterexample in the one regime where the scouting
+      search was inconclusive: a small target mass placed in a hole of supp µ.
+    state: active
+    next: >-
+      With research/lib, follow the residual for target masses at most 0.05 in a hole under
+      longer optimization and finer grids; a plateau closes the regime, a decay to zero with
+      a density that stays bounded is a candidate to examine analytically.

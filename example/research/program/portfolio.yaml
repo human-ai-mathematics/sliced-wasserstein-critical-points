@@ -1,0 +1,25 @@
+# The worked example's portfolio: what the search is doing, not what is claimed
+# The search is finished — conj:example is refuted —
+# so no route is left active.
+# A proved target, unlike this refuted one, could retain active routes towards an
+# alternative proof or a stronger result, with the remaining objective made explicit.
+
+approaches:
+  - id: ap:example-finite-battery
+    objective: >-
+      Run a numerical battery on the identity, decide whether it bears on conj:example,
+      and inspect its enumerated domain for candidate witnesses to the conjecture.
+    state: closed
+
+  - id: ap:example-roundoff-bound
+    objective: >-
+      Bound the floating-point discrepancy the battery measured, so that a near-equality
+      reported by a run can be told apart from a genuine violation.
+    state: blocked
+    blocker: cand:example-identity-stability
+    reopen_if: >-
+      cand:example-identity-stability is proved, or someone supplies any explicit error
+      bound for the identity evaluated in floating point.
+    next: >-
+      Bound the rounding error of the mean alone, then check whether the two sums
+      inherit it termwise.

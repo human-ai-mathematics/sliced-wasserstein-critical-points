@@ -1,0 +1,46 @@
+# The worked example's claim graph: status and edges only. Each statement, its kind and
+# its file are the manuscript's (modules/*.md, under :label: <id>). This is a
+# fixture, not this repository's program; the rules are the same as for the real ledger,
+# research/program/ledger.yaml, and the fields are in SPECIFICATION.md, Formats → Ledger.
+#
+# There is a proved statement, a proved fence resting on it, an open conjecture under an
+# open fence, and a conjecture refuted by a proved refuter. conj:example is the target of
+# brief.md and portfolio.yaml; the checkpoints in ../explorations/ record how it became refuted.
+
+nodes:
+
+  # A fence is an ordinary node; being cited in bounded_by is what makes it one.
+  # This one is open, so it guides the work on conj:weighted-example and rules nothing out.
+  - id: conj:weighted-upper
+    status: open
+
+  - id: conj:weighted-example
+    status: open
+    bounded_by: [conj:weighted-upper]
+
+  - id: prop:example
+    status: proved
+    proofs:
+      - artifact: solutions/prop-example.md
+        review: research/reviews/2026-09-01-prop-example-proof-review.md
+
+  # A proved fence: it binds conj:example, ruling out any constant above 1.
+  - id: prop:upper-constant
+    status: proved
+    depends_on: [prop:example]
+    proofs:
+      - artifact: solutions/prop-upper-constant.md
+        review: research/reviews/2026-09-01-prop-upper-constant-review.md
+
+  # Refuted: the other way a search ends, and it ends the same way — certified.
+  - id: conj:example
+    status: refuted
+    bounded_by: [prop:upper-constant]
+    refuted_by: [prop:example-refuter]
+
+  - id: prop:example-refuter
+    status: proved
+    depends_on: [prop:example]
+    proofs:
+      - artifact: solutions/prop-example-refuter.md
+        review: research/reviews/2026-09-03-prop-example-refuter-proof-review.md
