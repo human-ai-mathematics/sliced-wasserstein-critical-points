@@ -17,9 +17,8 @@ project:
     # TODO: the maintainer's name, to confirm.
     - name:
         literal: <author>
-  # The repository, e.g. https://github.com/<owner>/<repo>. Once set, each statement links
-  # to the issue forms of .github/ISSUE_TEMPLATE with its label filled in.
-  # github: <repository URL>
+  # Each statement links to the issue forms of .github/ISSUE_TEMPLATE with its label filled in.
+  github: https://github.com/human-ai-mathematics/sliced-wasserstein-critical-points
   # The shared bibliography. A literature node's `references:` keys must
   # exist here. It ships empty: MyST refuses a .bib holding only comments.
   bibliography:
