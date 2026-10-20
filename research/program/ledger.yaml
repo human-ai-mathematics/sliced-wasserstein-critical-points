@@ -3,9 +3,9 @@
 # Formats → Ledger.
 #
 # The four statements of the 17 October 2026 scouting (prop:notions-coincide,
-# thm:gaussian-target, thm:radial-d3, thm:radial-disc-d2) and prop:critical-sphere were
-# certified on 20 October 2026 by fresh agent reviews (route ap:certify-scouting); no human
-# has accepted them yet.
+# thm:gaussian-target, thm:radial-d3, thm:radial-disc-d2; route ap:certify-scouting) and
+# prop:critical-sphere were certified on 20 October 2026 by fresh agent reviews; no human has
+# accepted them yet.
 
 nodes:
 

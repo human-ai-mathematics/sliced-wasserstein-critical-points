@@ -124,9 +124,8 @@ origin, its quantile function is convex there, and $T$ is convex on each hole. A
 function equal to the identity at both ends of a hole lies below it, and the integral
 condition across the hole then forces equality. The holes are treated one at a time, so a
 radial support with infinitely many holes, such as a Cantor set of positive measure, needs
-nothing more. We did not find radial critical points of $\SW_2^2$ in dimension three treated
-in the literature; the radial examples there are singular, such as the sphere of
-[](#prop:critical-sphere).
+nothing more. We did not find this statement in the literature; the radial critical points treated
+there are singular, such as the sphere of [](#prop:critical-sphere).
 
 **Limits.** The uniform sphere of [](#prop:critical-sphere) has a single radius, an isolated
 point of its radial support: it is exactly where the first step fails. In odd dimension

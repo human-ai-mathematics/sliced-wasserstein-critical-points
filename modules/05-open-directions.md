@@ -6,7 +6,7 @@
 # Where the general case resists
 
 What is proved covers Gaussian targets, radial measures in dimension three, and radial
-measures in the plane whose support is a full disc. Four configurations are the natural
+measures in the plane whose support is a full disc or the whole plane. Four configurations are the natural
 next steps. None is settled here.
 
 **The annulus in the plane.** Let $\mu$ and $\rho$ be radial in $\R^2$, with $\mu$ supported on

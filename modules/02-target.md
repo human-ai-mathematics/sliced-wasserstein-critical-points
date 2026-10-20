@@ -44,7 +44,7 @@ ball ([](#thm:bonnotte-full-support)), and for the standard Gaussian target unde
 entropy ([](#thm:cs-isotropic)). [](#sec:special-targets) proves it for every Gaussian target
 with no entropy hypothesis ([](#thm:gaussian-target)), for radial measures in dimension three
 ([](#thm:radial-d3)), and for radial measures in the plane whose support is a full disc
-([](#thm:radial-disc-d2)). None of these touches the general case, where neither $\rho$ is
+or the whole plane ([](#thm:radial-disc-d2)). None of these touches the general case, where neither $\rho$ is
 Gaussian nor the pair radial. Numerical
 searches in the plane for an absolutely continuous critical point other than the target
 have found none; this is evidence, not proof. [](#sec:open-directions) says where the general case resists.

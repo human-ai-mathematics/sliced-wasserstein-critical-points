@@ -88,9 +88,9 @@ The general question ([](#conj:sw-critical)) is not settled here. What is proved
 
 - the usual notions of critical point coincide for every measure with no atom
   ([](#prop:notions-coincide)), so the question does not depend on which one is used;
-- for the standard Gaussian target, the uniform sphere of radius $r_* = d\,A_d < \sqrt d$ is
+- for the standard Gaussian target, the uniform sphere of one radius $r_* < \sqrt d$ is
   critical, and no other sphere centred at the origin is ([](#prop:critical-sphere), Example 1
-  of {cite:t}`DiazMartinMurphy2026`, reproved here with the uniqueness and the bound);
+  of {cite:t}`DiazMartinMurphy2026`, reproved here);
 - every Gaussian target, isotropic or not, is the only absolutely continuous critical point
   for itself, with no entropy hypothesis ([](#thm:gaussian-target));
 - in dimension three, a rotation-invariant critical point with no mass at the origin whose

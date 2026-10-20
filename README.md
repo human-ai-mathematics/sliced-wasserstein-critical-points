@@ -8,11 +8,11 @@ $\rho$? This is the open question of Vauthier, Korba and Mérigot
 statement is established in the literature when $\mu$ and $\rho$ have positive densities on a
 common ball, and for the standard Gaussian target under finite entropy. This repository
 proves it for every Gaussian target (no entropy hypothesis), for radial measures in dimension
-three and for radial measures whose support is a full disc in the plane, and proves that the
-usual notions of critical point coincide for atomless measures and that the critical sphere
+three and for radial measures whose support is a full disc or the whole plane in dimension
+two, and proves that the usual notions of critical point coincide for atomless measures and that the critical sphere
 of a standard Gaussian target has a unique radius. These five proofs are certified by **agent
 reviews** (20 October 2026), not yet by a human. A literature search (arXiv and the closest
-papers in full text) found earlier results covering part of three of them, cited in the
+papers in full text) found earlier results covering part of four of them, cited in the
 manuscript, and is not a claim of novelty. The general question stays open. The ledger
 [`research/program/ledger.yaml`](research/program/ledger.yaml), not this file, is the source
 of truth for what is proved.

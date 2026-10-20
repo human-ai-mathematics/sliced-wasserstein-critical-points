@@ -15,8 +15,9 @@ which disguises a dead route wears. It owns none of the mathematics — the stat
 this file never copies it. It is the question of Vauthier–Korba–Mérigot (arXiv:2502.06525v2,
 §7), with the normalizations of `def:sliced-wasserstein`, `def:barycentric-field` and
 `def:critical-point`. By `prop:notions-coincide`, the barycentric notion used in the statement
-agrees with the Lagrangian and Wasserstein notions for an atomless µ, in particular an absolutely continuous one; a proof
-may work with any of them once that node is certified, and must say which it uses.
+agrees with the Lagrangian and Wasserstein notions for an atomless µ, in particular an
+absolutely continuous one; a proof may work with any of them (the node is proved), and must
+say which it uses.
 
 Where the statement is vulnerable:
 
@@ -95,15 +96,16 @@ A reviewer checks every proof against these:
 
 ## Neighbourhood
 
-- `thm:gaussian-target`, `thm:radial-d3`, `thm:radial-disc-d2`, `prop:notions-coincide` —
-  special cases and the equivalence of notions, with scouting arguments to certify first.
+- `thm:gaussian-target`, `thm:radial-d3`, `thm:radial-disc-d2`, `prop:notions-coincide`,
+  `prop:critical-sphere` — proved here (agent reviews, 20 October 2026): special cases, the
+  equivalence of notions, and the critical sphere with its unique radius.
 - `cand:annulus-d2` — the smallest configuration outside every proved case.
 - `cand:odd-d-sign-changes` — the radial case in odd d ≥ 5.
 - `cand:score-gluing-gaussian` — why the Gaussian argument stops at Gaussians.
 - `cand:balayage-singular-layer` — the mechanism suggested by the numerical search for a
   counterexample.
 - The version for an arbitrary ρ ∈ P₂ (no density) — a strengthening worth a candidate
-  once a route needs it: the radial d = 3 argument already allows any radial ρ.
+  once a route needs it: the radial arguments (`thm:radial-d3`, `thm:radial-disc-d2`) already allow any radial ρ ∈ P₂.
 
 ## Budget policy
 
