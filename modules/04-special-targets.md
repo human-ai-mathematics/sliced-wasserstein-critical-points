@@ -1,6 +1,7 @@
-% Special cases of the target: two from the literature, three whose arguments were written
-% during the scouting of 17 October 2026 (ensae-conjecture-scouting/verification/13-korba-sw/)
-% and are not yet checked here. Contents of the labelled directives are fixed (orchestrator).
+% Special cases of the target: two from the literature, three proved here (dossiers in
+% solutions/, certified by agent reviews of 20 October 2026; no human review yet, novelty
+% against the literature not checked). Contents of the labelled directives are fixed
+% (orchestrator).
 
 (sec:special-targets)=
 # Special cases
@@ -34,6 +35,10 @@ $\SW_2^2(\mu_t,\rho) \le C/t$; a critical point is a stationary solution, so it 
 target. {cite:t}`VauthierKorbaMerigot2025` draw this consequence in Section 7.
 % The implication from the flow theorem to critical points is stated in VKM §7, not in CS.
 
+This result is contained in the next one, which removes the entropy hypothesis and allows
+any Gaussian target; it is kept because it is the published case from which the next proof
+starts.
+
 :::{prf:theorem} Gaussian targets
 :label: thm:gaussian-target
 Let $d \ge 1$, $m \in \R^d$, $\Sigma$ a symmetric positive definite $d \times d$ matrix, and
@@ -41,22 +46,50 @@ $\rho = N(m, \Sigma)$. If $\mu \in \Ptwo{d}$ is absolutely continuous and is a c
 of $\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
-No entropy assumption is made, and $\Sigma$ may be anisotropic.
+No entropy assumption is made, no assumption on the support or the regularity of the density
+of $\mu$, and $\Sigma$ may be anisotropic; the case $\rho = N(0, I_d)$ recovers
+[](#thm:cs-isotropic) without its entropy hypothesis.
 
-**Idea of the proof.** At a critical point, not only $v_\mu$ but every field $M v_\mu$ vanishes
-$\mu$-almost everywhere, so the entropy dissipation of Cozzi and Santambrogio may be
-computed along a preconditioned velocity. With $M = \Sigma$ the dissipation splits again
-direction by direction, each projection showing the slope of the relative entropy to
-$N(0, \theta^\top\Sigma\theta)$, which is exactly $\rho_\theta$. To avoid integrating by parts
-against an irregular $\mu$, the argument works with the derivative of $v_\mu$: on the interior
-of the convex hull of the support of $\mu$, $v_\mu$ is a Sobolev function, and the gradient of a
-Sobolev function vanishes almost everywhere on its zero set. Taking the trace of
-$D v_\mu = 0$ against $\Sigma$ and integrating in $\mu$ forces every monotone map $T_\theta$ to be
-the identity.
+**What was known.** We found three strictly smaller cases in the literature. The isotropic
+target with $\mu$ of finite entropy is [](#thm:cs-isotropic) above
+({cite:t}`CozziSantambrogio2025`, Theorem 4.1, with the consequence drawn by
+{cite:t}`VauthierKorbaMerigot2025`, Section 7). {cite:t}`ThurinBoyerNadjahi2026`
+(Proposition 4), applied with the Gaussian target as reference measure, cover a $\mu$ whose
+density is bounded above and below by multiples of the Gaussian density, hence with full
+support; their Proposition 8, used in their Appendix E.1, covers a centred Gaussian $\mu$ and a
+centred Gaussian target. We did not find the statement above, nor its method, in the
+literature; that search has limits, and we make no stronger claim.
 
-**Limits.** The splitting needs the scores of the projected targets,
-$(\log \rho_\theta)'(\inner{x}{\theta})$, to fit together linearly into a field
-$M \nabla \log \rho(x)$ on $\R^d$, with $M$ constant. That forces $\rho$ to be Gaussian.
+**Idea of the proof.** The heuristic is the dissipation of the relative entropy to $\rho$
+along the preconditioned velocity $\Sigma v_\mu$, which, at a critical point, vanishes as
+$v_\mu$ does. The proof replaces this flow computation by a static one, testing the condition
+at order zero and at order one. On the interior $U$ of the convex hull of the support of
+$\mu$, which carries all of $\mu$ because $\mu$ has a density, the field $v_\mu$ has a continuous
+version in the Sobolev space $W^{1,1}_{\mathrm{loc}}(U)$, with
+$Dv_\mu(x) = I - d\int T_\theta'(\inner{x}{\theta})\,\theta\theta^\top\dd\sigma(\theta)$. The gradient
+of a Sobolev function vanishes almost everywhere on its zero set (Stampacchia), and since
+$\mu$ has a density, $Dv_\mu = 0$ holds $\mu$-almost everywhere: this is the step the
+singular critical points defeat. Pairing $v_\mu = 0$ with $x - m$, and taking the trace of
+$Dv_\mu = 0$ against $\Sigma$, gives two identities between one-dimensional quantities, in
+which the weight $\theta^\top\Sigma\theta$ is exactly the variance of $\rho_\theta$. In each
+direction, because $\log\rho_\theta$ is a quadratic polynomial, the combination is at most
+$-(\theta^\top\Sigma\theta)\,\mathrm{KL}(\mu_\theta\mid\rho_\theta) - \tfrac12\int\abs{T_\theta - \Id}^2\dd\mu_\theta$;
+finiteness of the entropy of $\mu_\theta$ is deduced, not assumed. The identities make the
+average over directions vanish, so $T_\theta = \Id$ for almost every $\theta$, and $\mu = \rho$
+by the Cramér–Wold theorem.
+
+For the uniform sphere of [](#prop:critical-sphere), the support of $\mu$ is the boundary of
+its convex hull, which $\mu$ charges entirely: there is no interior on which to differentiate.
+In dimension three the failure is visible: the monotone map sends $(-r,r)$ onto $\R$, so
+$\int T_\theta'\dd\mu_\theta = \infty$ and the second identity breaks down.
+
+**Limits.** The proof uses the Gaussian form of $\rho$ twice: $\log\rho_\theta$ is quadratic, so the
+pairing with the linear field $x - m$ produces the potential part of every
+$\mathrm{KL}(\cdot\mid\rho_\theta)$ at once; and the trace against a constant matrix produces the
+variances of the $\rho_\theta$, the weights the entropy terms need. For another target, this
+would require the one-dimensional scores $(\log\rho_\theta)'(\inner{x}{\theta})$ to combine
+linearly into a single field $M\nabla\log\rho(x)$ on $\R^d$ with $M$ constant, which we expect,
+but have not shown, to single out Gaussians.
 
 ## Radial measures
 
@@ -76,13 +109,23 @@ law of $\abs{X}$, for $X \sim \mu$, has no atom. If $\mu$ is a critical point of
 $\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
+The proof gives more: it suffices that $\mu$ give no mass to the origin and that the support
+of the law of $\abs{X}$ have no isolated point. The target may be any rotation-invariant
+measure with a finite second moment, with an atom at the origin, a singular part or an
+unbounded support; $\mu$ need be neither absolutely continuous nor compactly supported.
+
 **Idea of the proof.** Two features are special to dimension three. The condition is
 *local*: the left-hand side above is a primitive, and since the radial support has no
 isolated point, its derivative $h(r)\,r$ vanishes on it, so $T$ is the identity there. And
-the projection of a sphere is *uniform* (Archimedes), so $\mu_1$ is constant on each hole of
-the radial support, which makes $T$ convex there. A convex function equal to the identity at
-both ends of a hole lies below it, and the integral condition across the hole then forces
-equality.
+the projection of a sphere is *uniform* (Archimedes), so the density of $\mu_1$ is constant on
+each hole of the radial support; since the density of $\rho_1$ is nonincreasing away from the
+origin, its quantile function is convex there, and $T$ is convex on each hole. A convex
+function equal to the identity at both ends of a hole lies below it, and the integral
+condition across the hole then forces equality. The holes are treated one at a time, so a
+radial support with infinitely many holes, such as a Cantor set of positive measure, needs
+nothing more. We did not find radial critical points of $\SW_2^2$ in dimension three treated
+in the literature; the radial examples there are singular, such as the sphere of
+[](#prop:critical-sphere).
 
 **Limits.** The uniform sphere of [](#prop:critical-sphere) has a single radius, an isolated
 point of its radial support: it is exactly where the first step fails. In odd dimension
@@ -97,11 +140,33 @@ the origin or the whole plane. If $\mu$ is a critical point of $\SW_2^2(\cdot,\r
 $\mu = \rho$.
 :::
 
+Here too the proof gives more: absolute continuity of $\mu$ is replaced by
+$\mu(\{0\}) = 0$, and $\rho$ may be any rotation-invariant measure with a finite second moment.
+A local form holds as well: if the open disc $B(0,a)$ lies in the support of $\mu$, the
+monotone map is the identity on $(-a,a)$.
+
 **Idea of the proof.** In the plane the condition becomes an Abel equation: with
 $U(\tau) = h(\sqrt\tau)$, it reads $\int_0^x U(\tau)(x - \tau)^{-1/2} \dd\tau = 0$ for $x$ in the
 squared radial support. When that support is a whole interval $[0, R^2]$, injectivity of the
 Abel transform gives $U = 0$, so $T$ is the identity and the projections of $\mu$ and $\rho$
-agree.
+agree. To have the equation at every point of the disc and not only $\mu$-almost everywhere,
+the proof uses that the field is continuous off the origin, not that the density of $\mu$ is
+positive: a density vanishing on a set of radii of positive measure but empty interior is
+covered.
+
+The mechanism is that of [](#thm:bonnotte-full-support): the support of $\mu$ has no hole, so
+the condition holds on a whole disc and determines the projections. Part of the statement is
+known. When $\mu$ has a positive density on the disc and the support of $\rho$ lies in the
+disc, the conclusion follows, in any dimension, from Lemma 5.7.2 of {cite:t}`Bonnotte2013`,
+from Corollaries 3 and 4 of {cite:t}`DiazMartinMurphy2026`, and, for a density comparable to a
+reference measure satisfying a Poincaré inequality, from Proposition 4 of
+{cite:t}`ThurinBoyerNadjahi2026`. Each of these needs the support of $\rho$ inside that of
+$\mu$ in some form; we did not find in the literature the cases where $\rho$ is an arbitrary
+radial measure, nor those where the density of $\mu$ vanishes on a set of positive measure or
+$\mu$ is not absolutely continuous. Neither [](#thm:bonnotte-full-support) nor the statement
+above contains the other. Radial symmetry makes the inversion explicit, which removes every
+hypothesis on $\rho$ and every positivity hypothesis on the density of $\mu$; the full-support
+theorem needs no symmetry. Neither says anything about supports with holes.
 
 **What remains.** On an annulus, the Abel equation on an interval away from the origin no
 longer forces $U = 0$; [](#sec:open-directions) takes it up.

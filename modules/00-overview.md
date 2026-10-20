@@ -12,8 +12,9 @@ The squared sliced Wasserstein distance to a target measure $\rho$ averages, ove
 directions, the one-dimensional transport cost between the projections of a measure and of
 $\rho$. It has critical points other than $\rho$, but every one known is singular. We ask
 whether an absolutely continuous critical point must be the target itself, a question of
-Vauthier, Korba and Mérigot. This document states the question precisely, collects the
-cases where it is known or argued, and says where the general case resists.
+Vauthier, Korba and Mérigot. This document states the question precisely, proves it for
+every Gaussian target and for several classes of radial measures, and says where the
+general case resists.
 
 +++
 
@@ -81,10 +82,32 @@ the target. In dimension three, for radial measures, that is exactly what happen
 sphere escapes only because its radial support is a single isolated point
 ([](#thm:radial-d3)).
 
+## Main results
+
+The general question ([](#conj:sw-critical)) is not settled here. What is proved:
+
+- the usual notions of critical point coincide for every measure with no atom
+  ([](#prop:notions-coincide)), so the question does not depend on which one is used;
+- for the standard Gaussian target, the uniform sphere of radius $r_* = d\,A_d < \sqrt d$ is
+  critical, and no other sphere centred at the origin is ([](#prop:critical-sphere), Example 1
+  of {cite:t}`DiazMartinMurphy2026`, reproved here with the uniqueness and the bound);
+- every Gaussian target, isotropic or not, is the only absolutely continuous critical point
+  for itself, with no entropy hypothesis ([](#thm:gaussian-target));
+- in dimension three, a rotation-invariant critical point whose radial law has no atom is the
+  target ([](#thm:radial-d3));
+- in the plane, a rotation-invariant critical point whose support is a full disc or the whole
+  plane is the target ([](#thm:radial-disc-d2)).
+
+Several proofs give somewhat more than the statement, as the text after each one says.
+These proofs have been checked by independent reviews carried out by AI agents, not yet by
+a human reader. Where we found earlier results covering part of a statement, the text after
+it cites them; beyond those, we did not find these statements in the literature we searched,
+which is not a claim that they are new.
+
 ## How this document is organized
 
 [](#sec:setting) fixes the normalizations and shows that the usual notions of critical point
-coincide for absolutely continuous measures. [](#sec:target) states the question.
+coincide for measures with no atom. [](#sec:target) states the question.
 [](#sec:singular) collects the singular critical points, which show why absolute continuity is
 needed. [](#sec:special-targets) treats the cases with full support, Gaussian targets and
 radial measures. [](#sec:open-directions) describes where the general case resists.
@@ -94,9 +117,9 @@ radial measures. [](#sec:open-directions) describes where the general case resis
 A statement counts as proved here only once a reviewer other than the author of its proof
 has checked that proof in full against the precise statement, or once a named person has
 read it and vouches for it; the status next to each statement says which, and links to the
-proof. Several arguments in this document have been written but not yet checked in this
-way: their statements carry that status, and the prose calls them arguments. Numerical
-computations are reported as evidence and never as proof.
+proof. At present every proof given here was checked by such a review conducted by an AI
+agent, which the status names with the model and the date; none has yet been read by a
+human reviewer. Numerical computations are reported as evidence and never as proof.
 
 To contribute — a counterexample, an idea, a correction — name the statement by the label
 displayed next to it.
