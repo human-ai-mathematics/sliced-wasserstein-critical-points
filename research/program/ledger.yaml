@@ -41,11 +41,14 @@ nodes:
     depends_on: [def:critical-point]
     references: [VauthierKorbaMerigot2025]
 
-  # A preprint (6 October 2026): "Preprint, not yet checked here".
+  # A preprint (6 October 2026), proved here by a direct dossier: "Proved (from a preprint)".
   - id: prop:critical-sphere
-    status: open
+    status: proved
     depends_on: [def:critical-point, prop:notions-coincide]
     references: [DiazMartinMurphy2026]
+    proofs:
+      - artifact: solutions/prop-critical-sphere.md
+        review: research/reviews/2026-10-20-prop-critical-sphere-rereview.md
 
   # --- special cases
   - id: thm:bonnotte-full-support
