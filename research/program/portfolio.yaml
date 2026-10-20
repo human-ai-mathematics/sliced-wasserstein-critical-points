@@ -9,12 +9,7 @@ approaches:
       thm:radial-d3, thm:radial-disc-d2) into dossiers and certify each by a fresh
       reviewer, so that later routes can cite them. This also runs the certification cycle
       once before a mathematician is contacted.
-    state: active
-    next: >-
-      Start with thm:gaussian-target, the strongest: a researcher (lens prove) writes
-      solutions/thm-gaussian-target.md from the scouting files C-gaussiennes-anisotropes.md
-      and C-relecture-adverse.md, writing out the Fubini and measurability step of its §4;
-      then a fresh reviewer with the certify lens, including the sphere test of the brief.
+    state: closed
 
   - id: ap:radial-annulus-d2
     objective: >-

@@ -76,11 +76,16 @@ Let $\mu, \rho \in \Ptwo{d}$.
 
 1. If $\mu$ is a Lagrangian critical point, or a Wasserstein critical point, of
    $\SW_2^2(\cdot,\rho)$, then it is a critical point of $\SW_2^2(\cdot,\rho)$.
-2. If $\mu$ is absolutely continuous, the three notions of critical point of
+2. If $\mu$ has no atom, the three notions of critical point of
    $\SW_2^2(\cdot,\rho)$ coincide.
 :::
 
-No compact support and no density of $\rho$ are assumed.
+No compact support and no density of $\rho$ are assumed. Part of this is known.
+{cite:t}`VauthierKorbaMerigot2025` (Corollary 4.8) prove that a Lagrangian critical point is a
+critical point, for every $\mu$ and $\rho$, and the converse when $\mu$ and $\rho$ are both
+compactly supported and have no atom. The statement above adds the Wasserstein notion, which
+we did not find related to the other two for $\SW_2^2$ in the literature, and for the converse
+keeps only the hypothesis that $\mu$ has no atom.
 
 **Idea of the proof.** Testing a perturbation $(\Id + t\xi)_\#\mu$ against a coupling built
 direction by direction gives the upper bound
@@ -92,10 +97,20 @@ $$
 
 The field $w = \Id - v_\mu$ has a cyclically monotone graph, because each $\bar\gamma_\theta$
 is nondecreasing; so $t \mapsto (\Id - t v_\mu)_\#\mu$, $t \in [0,1]$, is a Wasserstein
-geodesic issued from $\mu$. Along it, either notion of criticality and the upper bound give
-$0 \le -\tfrac2d\norm{v_\mu}^2$, hence $v_\mu = 0$. Conversely, when the projections of $\mu$
-have no atom, the right derivative along $(\Id+t\xi)_\#\mu$ is exactly
-$\tfrac2d\inner{v_\mu}{\xi}$, by a one-dimensional bathtub argument; and when $\mu$ is
-absolutely continuous, every geodesic issued from $\mu$ is of that form, by Brenier's theorem.
+geodesic issued from $\mu$. (A close analogue: for an absolutely continuous measure,
+{cite:t}`LiMoosmullerWang2023` show that the map matching the slices along an orthonormal
+basis, and its convex combinations with the identity, are optimal transport maps.) Along it, either notion of criticality and the upper bound give
+$0 \le -\tfrac2d\norm{v_\mu}^2$, hence $v_\mu = 0$. This part uses no hypothesis on $\mu$.
+
+For the converse, a measure with no atom has atomless projections in almost every
+direction. For an atomless source on the line, a one-dimensional bathtub argument gives the
+first variation of $W_2^2$ exactly; integrated over directions, it gives the right derivative
+of $\SW_2^2$ along the displacement interpolation of *any* coupling $\gamma$ of $\mu$ with
+another measure: $\tfrac2d\int\inner{v_\mu(x)}{y-x}\dd\gamma(x,y)$. Since every Wasserstein
+geodesic is the displacement interpolation of an optimal coupling, whether or not that
+coupling is induced by a map, no appeal to Brenier's theorem is needed, and absolute
+continuity enters only through the absence of atoms. The hypothesis cannot be dropped for the
+Wasserstein notion: $\delta_0$ is a critical point for every centred target $\rho \ne \delta_0$,
+and $\SW_2^2$ decreases strictly along the geodesic from $\delta_0$ to $\rho$.
 
 % Source: ensae-conjecture-scouting/verification/13-korba-sw/1-relecture.md, §2 (Prop. A).

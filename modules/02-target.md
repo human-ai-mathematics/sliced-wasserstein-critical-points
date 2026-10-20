@@ -41,12 +41,15 @@ stop; it is the missing step between the stationary-point analysis and convergen
 
 **Evidence.** The statement holds when $\mu$ and $\rho$ have positive densities on a common
 ball ([](#thm:bonnotte-full-support)), and for the standard Gaussian target under finite
-entropy ([](#thm:cs-isotropic)). [](#sec:special-targets) gives arguments, not yet checked
-here, for every Gaussian target and for radial measures in dimension three. Numerical
+entropy ([](#thm:cs-isotropic)). [](#sec:special-targets) proves it for every Gaussian target
+with no entropy hypothesis ([](#thm:gaussian-target)), for radial measures in dimension three
+([](#thm:radial-d3)), and for radial measures in the plane whose support is a full disc
+or the whole plane ([](#thm:radial-disc-d2)). None of these touches the general case, where neither $\rho$ is
+Gaussian nor the pair radial. Numerical
 searches in the plane for an absolutely continuous critical point other than the target
 have found none; this is evidence, not proof. [](#sec:open-directions) says where the general case resists.
 
 **Where to start.** The cases of [](#sec:special-targets) fail beyond themselves for named
-reasons: the Gaussian argument needs the scores of the projected targets to fit together
-linearly, and the radial argument needs, in dimension three, the projection of a sphere to
-be uniform. The annulus in the plane is the smallest configuration where neither applies.
+reasons: the Gaussian proof needs the scores of the projected targets to fit together
+linearly, the radial proof in dimension three needs the projection of a sphere to be
+uniform, and the planar proof needs the support of $\mu$ to have no hole. The annulus in the plane is the smallest configuration where neither applies.
