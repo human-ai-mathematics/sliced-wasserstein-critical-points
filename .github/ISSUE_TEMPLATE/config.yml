@@ -1,3 +1,9 @@
-# The three forms below. The repository uses neither Discussions nor a contact address:
-# the template's links to both were removed.
+# The three forms below, and a link to Discussions for conversation. The repository has no
+# contact address: the template's e-mail link was removed.
 blank_issues_enabled: true
+contact_links:
+  - name: Ask a question, or think out loud
+    url: https://github.com/human-ai-mathematics/sliced-wasserstein-critical-points/discussions
+    about: >
+      Interpretation, background, whether an idea is worth trying. Nothing has to be
+      finished to be worth saying here.
