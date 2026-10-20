@@ -15,7 +15,7 @@ which disguises a dead route wears. It owns none of the mathematics — the stat
 this file never copies it. It is the question of Vauthier–Korba–Mérigot (arXiv:2502.06525v2,
 §7), with the normalizations of `def:sliced-wasserstein`, `def:barycentric-field` and
 `def:critical-point`. By `prop:notions-coincide`, the barycentric notion used in the statement
-agrees with the Lagrangian and Wasserstein notions for an absolutely continuous µ; a proof
+agrees with the Lagrangian and Wasserstein notions for an atomless µ, in particular an absolutely continuous one; a proof
 may work with any of them once that node is certified, and must say which it uses.
 
 Where the statement is vulnerable:

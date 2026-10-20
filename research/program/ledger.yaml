@@ -29,8 +29,11 @@ nodes:
 
   # --- the setting
   - id: prop:notions-coincide
-    status: open
+    status: proved
     depends_on: [def:critical-point]
+    proofs:
+      - artifact: solutions/prop-notions-coincide.md
+        review: research/reviews/2026-10-20-prop-notions-coincide-rereview.md
 
   # --- singular critical points, from the literature
   - id: prop:critical-segments
@@ -41,7 +44,7 @@ nodes:
   # A preprint (6 October 2026): "Preprint, not yet checked here".
   - id: prop:critical-sphere
     status: open
-    depends_on: [def:critical-point]
+    depends_on: [def:critical-point, prop:notions-coincide]
     references: [DiazMartinMurphy2026]
 
   # --- special cases
@@ -58,13 +61,22 @@ nodes:
     references: [CozziSantambrogio2025, VauthierKorbaMerigot2025]
 
   - id: thm:gaussian-target
-    status: open
+    status: proved
     depends_on: [def:critical-point]
+    proofs:
+      - artifact: solutions/thm-gaussian-target.md
+        review: research/reviews/2026-10-20-thm-gaussian-target.md
 
   - id: thm:radial-d3
-    status: open
+    status: proved
     depends_on: [def:critical-point]
+    proofs:
+      - artifact: solutions/thm-radial-d3.md
+        review: research/reviews/2026-10-20-thm-radial-d3.md
 
   - id: thm:radial-disc-d2
-    status: open
+    status: proved
     depends_on: [def:critical-point]
+    proofs:
+      - artifact: solutions/thm-radial-disc-d2.md
+        review: research/reviews/2026-10-20-thm-radial-disc-d2.md

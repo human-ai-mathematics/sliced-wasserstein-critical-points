@@ -76,7 +76,7 @@ Let $\mu, \rho \in \Ptwo{d}$.
 
 1. If $\mu$ is a Lagrangian critical point, or a Wasserstein critical point, of
    $\SW_2^2(\cdot,\rho)$, then it is a critical point of $\SW_2^2(\cdot,\rho)$.
-2. If $\mu$ is absolutely continuous, the three notions of critical point of
+2. If $\mu$ has no atom, the three notions of critical point of
    $\SW_2^2(\cdot,\rho)$ coincide.
 :::
 
