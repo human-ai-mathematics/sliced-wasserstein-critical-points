@@ -23,8 +23,8 @@ holds as soon as $\mu$ has no atom, which absolute continuity implies. The steps
    $\norm{\Id - v_\mu}_{L^2(\mu)}^2 \le \int \abs{y}^2 \dd\rho$.
 2. *An upper bound valid for every $\mu$* ([](#lem:sol-nc-upper)). Coupling the perturbed
    projection with $\rho_\theta$ through the optimal plan $\gamma_\theta$ gives
-   $\SW_2^2((\Id+t\xi)_\#\mu,\rho) \le \SW_2^2(\mu,\rho) + \tfrac{2t}{d}\inner{v_\mu}{\xi}
-   + \tfrac{t^2}{d}\norm{\xi}^2$ for all $t \in \R$.
+   $\SW_2^2((\Id+t\xi)_\#\mu,\rho) \le \SW_2^2(\mu,\rho) + \tfrac{2t}{d}\inner{v_\mu}{\xi} +
+   \tfrac{t^2}{d}\norm{\xi}^2$ for all $t \in \R$.
 3. *The direction $-v_\mu$ is a geodesic direction, for every $\mu$*
    ([](#lem:sol-nc-geodesic)). The field $\Id - v_\mu$ has a cyclically monotone graph
    because each $g(\theta,\cdot)$ is nondecreasing; hence it is an optimal transport map and
@@ -463,8 +463,8 @@ $\Prob(U < q) = F_\alpha(q) = a$; so $Z_0 = \one\{U<q\}$ is admissible, and by t
   Z_0}]$ (on $\{U<q\}$, $Z_0 = 1 \ge Z_t$; on $\{U > q\}$, $Z_0 = 0 \le Z_t$). By the two bounds,
   this is $f(t) - t\E[HZ_t] - f(0) \le t(\E[HZ_0] - \E[HZ_t]) \le 2t\E\abs{H}$.
 - For $\delta > 0$ and $K > 0$,
-  $\E[\abs{H}\abs{Z_t - Z_0}] \le \E[\abs{H}\one\{\abs{U-q}\le\delta\}] + \E[\abs{H}\one\{\abs{H}
-  > K\}] + \tfrac{K}{\delta}\E[\abs{U-q}\abs{Z_t - Z_0}]$, and the last term is at most
+  $\E[\abs{H}\abs{Z_t - Z_0}] \le \E[\abs{H}\one\{\abs{U-q}\le\delta\}] + \E[\abs{H}\one\{\abs{H} >
+  K\}] + \tfrac{K}{\delta}\E[\abs{U-q}\abs{Z_t - Z_0}]$, and the last term is at most
   $2tK\E\abs{H}/\delta$. Letting $t \downarrow 0$, then $K \to \infty$ and $\delta \to 0$, by
   dominated convergence and $\Prob(U = q) = 0$: $\E[HZ_t] \to \E[HZ_0]$.
 
