@@ -7,8 +7,8 @@ numbering:
 
 % Dossier for thm:radial-d3 (route ap:certify-scouting, lens prove). Written from scratch;
 % the scouting file ensae-conjecture-scouting/verification/13-korba-sw/1-relecture.md, §3
-% ("Théorème B") and §4, suggested the structure and is not cited as authority. Uncertified
-% draft until a proofs[] record in the ledger names it. Normalizations: those of
+% ("Théorème B") and §4, suggested the structure and is not cited as authority. Certified
+% (see the proofs[] record in the ledger). Normalizations: those of
 % def:sliced-wasserstein and def:barycentric-field (sigma a probability, factor d = 3).
 
 **Overview.** We prove [](#thm:radial-d3) in a slightly sharper form,
@@ -48,12 +48,12 @@ critical point $\delta_0$ escape the argument.
 
 **Dependencies.**
 
-- Manuscript nodes: [](#def:critical-point), hence [](#def:barycentric-field) and
+- Manuscript results: [](#def:critical-point), hence [](#def:barycentric-field) and
   [](#def:sliced-wasserstein). From [](#def:barycentric-field) we use its stated fact that, when
   $\mu_\theta$ has no atom, $\bar\gamma_\theta = T_\theta = Q_{\rho_\theta}\circ F_{\mu_\theta}$
   $\mu_\theta$-a.e.: the one-dimensional optimal transport theorem, {cite:t}`Santambrogio2015`,
   Theorem 2.9 (with Proposition 2.2 for $(Q_\nu)_\#\mathrm{Unif}(0,1) = \nu$ and
-  $(F_\nu)_\#\nu = \mathrm{Unif}(0,1)$ for an atomless $\nu$). No other node is used. In
+  $(F_\nu)_\#\nu = \mathrm{Unif}(0,1)$ for an atomless $\nu$). No other result of the manuscript is used. In
   particular [](#prop:notions-coincide), [](#thm:gaussian-target) and
   [](#prop:critical-sphere) are **not** used; [](#prop:critical-sphere) and
   [](#prop:critical-segments) appear only in audit remarks, which are not part of the proof.
@@ -483,7 +483,7 @@ sphere, it asserts $T(r) = r$ at the end of the hole $(0,r)$, and so "proves" th
 is not critical, which is false. Here the endpoint values come only from Step A, which needs the
 endpoint to be a non-isolated point of $K$ inside $(0,R)$, and the passage from $h \le 0$ to
 $h = 0$ uses the integral condition $G(b) - G(a) = 0$. Nothing in the proof rests on
-[](#prop:critical-sphere), which is not certified here: this remark is a consistency check.
+[](#prop:critical-sphere), which is proved separately: this remark is a consistency check.
 :::
 
 :::{prf:remark} Audit: an atom at the origin
@@ -507,7 +507,7 @@ claimed about them here.
   Lebesgue measure, every relatively open subset of which has positive Lebesgue measure (a
   Smith–Volterra–Cantor set, for instance), and $\mu_{\mathrm{rad}}$ the normalized Lebesgue measure on $K$. Then $\mu$ is
   absolutely continuous, with density proportional to $\one_K(\abs{x})\,\abs{x}^{-2}$, and
-  $(0,R) \setminus K$ consists of $(0,1)$ and countably many holes, dense in $[1,2]$. The proof
+  $(0,R) \setminus K$ consists of $(0,\min K)$ and countably many holes, dense in $[\min K, \max K]$. The proof
   applies unchanged: Step A is pointwise on $K \cap (0,R)$, and Step B treats each component
   separately, using only its two endpoints, which lie in $K \cap (0,R)$ or equal $0$
   ([](#lem:r3-support) (3)). No ordering of the holes, induction, or interior point of $K$ is
@@ -536,8 +536,7 @@ The critical points of [](#prop:critical-segments) are not invariant under rotat
 not test it.
 :::
 
-**Fences respected.** [](#thm:radial-d3) has no `bounded_by`. The fences of the target:
-[](#prop:critical-sphere) (open) exhibits a rotation-invariant critical point for
+**Consistency with the known critical points.** [](#prop:critical-sphere) (proved) exhibits a rotation-invariant critical point for
 $\rho = N(0, I_3)$ whose radial law is an atom at an isolated point of its support; (H) excludes
 it, and [](#rem:r3-sphere-audit) locates the steps it defeats. [](#prop:critical-segments)
 (proved) concerns measures carried by a line, not rotation-invariant in $\R^3$, so it is outside

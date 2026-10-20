@@ -5,8 +5,8 @@ numbering:
   enumerator: "4.%s"
 ---
 
-% Proof dossier for thm:radial-disc-d2 (route ap:certify-scouting, lens prove). Uncertified
-% draft until a proofs[] record in the ledger names it. Reproved from scratch; the scouting
+% Proof dossier for thm:radial-disc-d2 (route ap:certify-scouting, lens prove). Certified
+% (see the proofs[] record in the ledger). Reproved from scratch; the scouting
 % notes ensae-conjecture-scouting/verification/13-korba-sw/A-radial-d2.md (§1, §2 (P1), (P3))
 % and 1-relecture.md (§4) were read for the idea only and are not cited as authority.
 % Normalizations: def:sliced-wasserstein (sigma a probability) and def:barycentric-field
@@ -48,8 +48,8 @@ compare the result with [](#thm:bonnotte-full-support) ([](#rem:sol-rd2-bonnotte
 **Dependencies.** The definitions [](#def:sliced-wasserstein), [](#def:barycentric-field) and
 [](#def:critical-point), including the identification $\bar\gamma_\theta = T_\theta$
 $\mu_\theta$-a.e. when $\mu_\theta$ has no atom, which is part of
-[](#def:barycentric-field). No other node of the manuscript is used in the proof:
-[](#thm:bonnotte-full-support), [](#prop:critical-sphere) and the other nodes named below
+[](#def:barycentric-field). No other result of the manuscript is used in the proof:
+[](#thm:bonnotte-full-support), [](#prop:critical-sphere) and the other results named below
 appear only in remarks. Literature results used, all classical: Fubini–Tonelli; Lebesgue's
 differentiation theorem (a locally integrable function whose integral over every interval
 vanishes is zero a.e.); uniqueness of a finite Borel measure on $\R^2$ given its Fourier
@@ -427,13 +427,13 @@ projection at points $s \ne 0$ should still be $Q_{\rho_1}(F_{\mu_1}(s))$, the A
 would give $Q_{\rho_1} = Q_{\mu_1}$ off the band of levels $(F_{\mu_1}(0^-), F_{\mu_1}(0))$, and
 monotonicity would squeeze $Q_{\rho_1}$ to $0$ on that band. Writing this out requires the
 barycentric projection of the monotone plan at the non-atomic points of a measure with one
-atom; it is not done in this dossier, and [](#thm:sol-rd2-main) does not claim it.
+atom; it is not done here, and [](#thm:sol-rd2-main) does not claim it.
 :::
 
 :::{prf:remark} Why the argument does not extend to an annulus
 :label: rem:sol-rd2-annulus
-Let $\mu$ be radial with radial support $[c, R]$, $0 < c < R \le \infty$ (the setting of the
-open candidate `cand:annulus-d2`). Steps 1 to 4 still run with the open annulus
+Let $\mu$ be radial with radial support $[c, R]$, $0 < c < R \le \infty$ (the annulus case,
+which remains open: [](#sec:open-directions)). Steps 1 to 4 still run with the open annulus
 $\{c < \abs x < R\}$ in place of $B(0,a) \setminus \{0\}$ — the continuity argument of
 [](#lem:sol-rd2-continuous), part 3, does not use the origin, and the computation of
 [](#lem:sol-rd2-reduction) holds for every $r \in (0,R)$ once $T$ is odd — and give
@@ -462,7 +462,7 @@ addition, that $T$ be nondecreasing (true for $\varepsilon$ small, since $h$ is 
 bounded derivative: $h'(s) = 2sU'(s^2)$, with $U'$ continuous on $[0,\infty)$ and of order
 $x^{-5/2}$ at infinity) and that $T_\#\mu_1$ be the projection $\rho_1$ of a *positive* radial
 measure $\rho$, which in the plane is a sign condition on an inverse Abel transform inside the
-hole. That non-local sign condition is exactly what `cand:annulus-d2` asks about; nothing here
+hole. That non-local sign condition is exactly the open question of the annulus case; nothing here
 decides it. (The claims of this paragraph on $T$ are checked only in outline and are not used
 anywhere.)
 
@@ -514,8 +514,7 @@ density of $\mu$. It says nothing about supports with holes, the case [](#conj:s
 turns on; [](#rem:sol-rd2-annulus) shows why.
 :::
 
-**Fences respected.** [](#thm:radial-disc-d2) has no `bounded_by` node. The fences of the
-target are checked anyway. [](#prop:critical-sphere) ($d = 2$): the critical circle has
+**Consistency with the known critical points.** [](#prop:critical-sphere) ($d = 2$): the critical circle has
 support a circle, not a disc, so it is outside the hypotheses of [](#thm:sol-rd2-main),
 although it satisfies $\mu(\{0\}) = 0$ ([](#rem:sol-rd2-circle)). [](#prop:critical-segments):
 a measure carried by a segment is not radial, and its support is not a disc. $\delta_0$, critical

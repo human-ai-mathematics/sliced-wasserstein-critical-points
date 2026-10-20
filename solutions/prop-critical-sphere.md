@@ -366,7 +366,7 @@ $$
 
 $d$ times the covariance of $\zeta_d$ and $N(0,1)$ under their monotone coupling. For
 $d = 2$, $\zeta_2$ is the law of $\cos\Psi$ with $\Psi$ uniform on $(0,2\pi)$, $Q_{\zeta_2}(u)
-= -\cos(\pi u)$ and $r_* = -2\,\E[G\cos(\pi\Phi(G))]$ with $G \sim N(0,1)$. This dossier gives
+= -\cos(\pi u)$ and $r_* = -2\,\E[G\cos(\pi\Phi(G))]$ with $G \sim N(0,1)$. This proof gives
 a closed form only for $d = 3$; whether other dimensions admit one is not addressed. The
 bound $r_* < \sqrt d$ says that the critical sphere has a smaller second moment, $r_*^2$,
 than the target, whose second moment is $d$.
@@ -409,8 +409,8 @@ root $r_* = dA_d$ for the same constant $A_d = \int \Phi^{-1}(H(\theta_1))\theta
 No discrepancy affecting the result was found.
 :::
 
-**Fences respected.** [](#prop:critical-sphere) has no `bounded_by` node. The sphere is a
-fence of [](#conj:sw-critical); [](#thm:sol-cs-main) is consistent with that conjecture,
+**Consistency.** The sphere is a test case for [](#conj:sw-critical); [](#thm:sol-cs-main) is
+consistent with that conjecture,
 since $\mu_{r_*}$ is not absolutely continuous (it is concentrated on a Lebesgue-null sphere),
 and with [](#prop:notions-coincide), since $\mu_{r_*}$ has no atom and is critical in all three
 senses at once.

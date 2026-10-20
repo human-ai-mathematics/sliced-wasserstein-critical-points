@@ -75,7 +75,7 @@ nodes:
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/thm-radial-d3.md
-        review: research/reviews/2026-10-20-thm-radial-d3-rereview.md
+        review: research/reviews/2026-10-20-thm-radial-d3-rereview2.md
 
   - id: thm:radial-disc-d2
     status: proved

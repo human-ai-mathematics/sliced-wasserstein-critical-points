@@ -47,7 +47,7 @@ fails for measures with atoms. Absolute continuity is used nowhere beyond the ab
 atoms.
 
 **Dependencies.** The definitions [](#def:sliced-wasserstein), [](#def:barycentric-field)
-and [](#def:critical-point). No other node of the manuscript is used; in particular
+and [](#def:critical-point). No other result of the manuscript is used; in particular
 [](#prop:critical-sphere) and [](#prop:critical-segments) are only discussed in a remark,
 never used. Literature results used, all classical:
 
@@ -605,7 +605,7 @@ $\mu$ has no atom, so (a) and (b) apply.
   three notions coincide as well: the sphere of [](#prop:critical-sphere), stated there as a
   Wasserstein critical point, is a critical point and a Lagrangian critical point, and the
   segments, stated as critical points, are also Lagrangian and Wasserstein critical points.
-  (This uses only the statements of those two results, which this dossier does not prove.)
+  (This uses only the statements of those two results, which are proved separately.)
   Consequently, the equivalence of notions cannot be where a proof of [](#conj:sw-critical)
   uses absolute continuity of $\mu$: it passes the sphere test and the segment test of the
   problem without distinguishing them from absolutely continuous measures. A proof of the
@@ -637,7 +637,7 @@ $\mu$ has no atom, so (a) and (b) apply.
   [](#lem:sol-nc-geodesic) is $\ge 0$; part (b) proves the existence of the derivatives for
   atomless $\mu$. Their existence for general $\mu$, which
   {cite:t}`VauthierKorbaMerigot2025`, Proposition 4.7(a), derive from convexity, is not used.
-- Every step above is written out; the dossier rests on the four literature results listed
+- Every step above is written out; the proof rests on the four literature results listed
   under *Dependencies*, whose theorem numbers a reviewer should check against the editions in
   the bibliography.
 :::
@@ -654,8 +654,8 @@ Corollary 4.8, part (a) adds the Wasserstein notion, and part (b) removes the as
 compact supports and atomless $\rho$, keeping only that $\mu$ has no atom.
 :::
 
-**Fences respected.** [](#prop:notions-coincide) has no `bounded_by` node. The fences of the
-target, [](#prop:critical-segments) and [](#prop:critical-sphere), concern
+**Consistency with the known critical points.** The known singular critical points,
+[](#prop:critical-segments) and [](#prop:critical-sphere), concern
 [](#conj:sw-critical), not this statement; [](#rem:sol-nc-singular) checks that the refined
 statement is consistent with both (they are atomless, and the equivalence holds for them),
 and uses neither.

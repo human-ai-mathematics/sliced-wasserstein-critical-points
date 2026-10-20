@@ -5,8 +5,8 @@ numbering:
   enumerator: "2.%s"
 ---
 
-% Proof dossier for thm:gaussian-target (researcher, prove lens). Uncertified draft until a
-% proofs[] record in the ledger names it. Reproved from scratch; the scouting notes of
+% Proof dossier for thm:gaussian-target (researcher, prove lens); certified (see the proofs[]
+% record in the ledger). Reproved from scratch; the scouting notes of
 % 17 October 2026 (ensae-conjecture-scouting/verification/13-korba-sw/C-*.md) were read for
 % the idea only and are not cited as authority.
 
@@ -41,12 +41,12 @@ tests the criticality condition twice, once at order zero and once at order one.
 
 **Dependencies.**
 
-- Manuscript nodes: [](#def:critical-point), hence [](#def:barycentric-field) and
+- Manuscript results: [](#def:critical-point), hence [](#def:barycentric-field) and
   [](#def:sliced-wasserstein). From [](#def:barycentric-field) we use its stated fact that,
   when $\mu_\theta$ has no atom, $\bar\gamma_\theta = T_\theta$ $\mu_\theta$-a.e. This is the
   one-dimensional optimal transport theorem: Santambrogio, *Optimal Transport for Applied
   Mathematicians* (2015), Theorem 2.9 (with the monotone map of Theorem 2.5), restated as Theorem B.6 of
-  {cite:t}`VauthierKorbaMerigot2025`. No other node is used. In particular,
+  {cite:t}`VauthierKorbaMerigot2025`. No other result of the manuscript is used. In particular,
   [](#prop:notions-coincide), [](#thm:cs-isotropic) and [](#prop:critical-sphere) are **not**
   used. [](#prop:critical-segments) and [](#prop:critical-sphere) appear only in the audit
   remarks, which are not part of the proof.
@@ -554,7 +554,7 @@ configuration of [](#prop:critical-sphere). Run the argument on it.
   no atom (so $\bar\gamma_\theta = T_\theta$) and the second moments. [](#lem:gt-one-dim) and the
   final step only involve the one-dimensional laws $\mu_\theta$, which are absolutely
   continuous; they apply to every $\theta$ with $\int T_\theta'\dd\mu_\theta < \infty$.
-- Hence, if the sphere is critical as [](#prop:critical-sphere) asserts, [](#eq-gt-II) must
+- Hence, since the sphere is critical ([](#prop:critical-sphere)), [](#eq-gt-II) must
   fail for it: the step that the sphere defeats is precisely the passage through
   [](#lem:gt-stampacchia). For $d = 3$ this is visible directly. There
   $\mu_\theta = \mathrm{Unif}[-r, r]$ and $T_\theta$ maps $(-r, r)$ onto $\R$, so
@@ -562,7 +562,7 @@ configuration of [](#prop:critical-sphere). Run the argument on it.
   for every $\theta$.
 
 This bullet list is a consistency check, not part of the proof. [](#prop:critical-sphere) is
-not certified here and nothing above rests on it.
+proved separately and nothing above rests on it.
 :::
 
 :::{prf:remark} Audit: the critical segments
@@ -623,8 +623,8 @@ $v_\mu$ up to a $\mu$-null set. This is a reading of the definition, not an open
 recorded so that a reviewer can check it against the manuscript.
 :::
 
-**Fences respected.** [](#thm:gaussian-target) has no `bounded_by`. The fences of the target,
-[](#prop:critical-segments) (proved) and [](#prop:critical-sphere) (open), exhibit critical
+**Consistency with the known critical points.** The known singular critical points,
+[](#prop:critical-segments) and [](#prop:critical-sphere) (both proved), exhibit critical
 points for $\rho = N(0, I_d)$ that are not absolutely continuous. The theorem assumes
 $\mu \ll \Leb$ and so does not contradict them. [](#rem:gt-sphere-audit) and
 [](#rem:gt-segments-audit) locate the step each of them defeats.
