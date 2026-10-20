@@ -241,7 +241,7 @@ $$
    $g(\theta,s)$ be a jointly Borel version, that is, $g(\theta,\cdot) = \bar\gamma_\theta$
    $\mu_\theta$-a.e. for every $\theta$. The set
    $N = \{(x,\theta) : \abs{x} < R,\ g(\theta,\inner{x}{\theta}) \ne T(\inner{x}{\theta})\}$ is
-   Borel, and for each $\theta$ its section has $\mu$-measure
+   Borel, and for each $\theta$ its section has $\mu$-measure at most
    $\mu_1(\{s \in (-R,R) : g(\theta,s) \ne T(s)\}) = 0$. By Tonelli, $(\mu \otimes \sigma)(N) = 0$,
    so for $\mu$-a.e. $x \in B(0,R)$ the two integrands agree for $\sigma$-a.e. $\theta$, the
    integral defining $v_\mu(x)$ converges absolutely (by part 1), and $v_\mu(x) = v(x)$.

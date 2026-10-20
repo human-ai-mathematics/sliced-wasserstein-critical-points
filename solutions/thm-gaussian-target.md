@@ -45,7 +45,7 @@ tests the criticality condition twice, once at order zero and once at order one.
   [](#def:sliced-wasserstein). From [](#def:barycentric-field) we use its stated fact that,
   when $\mu_\theta$ has no atom, $\bar\gamma_\theta = T_\theta$ $\mu_\theta$-a.e. This is the
   one-dimensional optimal transport theorem: Santambrogio, *Optimal Transport for Applied
-  Mathematicians* (2015), Theorem 2.5, restated as Theorem B.6 of
+  Mathematicians* (2015), Theorem 2.9 (with the monotone map of Theorem 2.5), restated as Theorem B.6 of
   {cite:t}`VauthierKorbaMerigot2025`. No other node is used. In particular,
   [](#prop:notions-coincide), [](#thm:cs-isotropic) and [](#prop:critical-sphere) are **not**
   used. [](#prop:critical-segments) and [](#prop:critical-sphere) appear only in the audit
@@ -54,7 +54,8 @@ tests the criticality condition twice, once at order zero and once at order one.
   Differential Equations of Second Order* (2nd ed., 1983), Lemma 7.7: if $u$ is weakly
   differentiable on an open set $\Omega$ (that is, $u, Du \in L^1_{\mathrm{loc}}(\Omega)$), then
   $Du = 0$ a.e. on any set where $u$ is constant. The same result is Theorem 4.4(iv) of
-  Evans–Gariepy, *Measure Theory and Fine Properties of Functions* (revised ed., 2015). We
+  Evans–Gariepy, *Measure Theory and Fine Properties of Functions* (revised ed., 2015), stated
+  there for $W^{1,p}(U)$ and applied here on each open $\Omega' \Subset \Omega$. We
   also use, without numbering, standard facts: Fubini–Tonelli, Lebesgue's density
   theorem, the fundamental theorem of calculus for absolutely continuous functions, Jensen's
   inequality, and Lévy's uniqueness theorem for characteristic functions.

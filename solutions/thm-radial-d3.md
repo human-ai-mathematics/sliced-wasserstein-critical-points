@@ -52,7 +52,7 @@ critical point $\delta_0$ escape the argument.
   [](#def:sliced-wasserstein). From [](#def:barycentric-field) we use its stated fact that, when
   $\mu_\theta$ has no atom, $\bar\gamma_\theta = T_\theta = Q_{\rho_\theta}\circ F_{\mu_\theta}$
   $\mu_\theta$-a.e.: the one-dimensional optimal transport theorem, {cite:t}`Santambrogio2015`,
-  Theorem 2.5 (with Proposition 2.2 for $(Q_\nu)_\#\mathrm{Unif}(0,1) = \nu$ and
+  Theorem 2.9 (with Proposition 2.2 for $(Q_\nu)_\#\mathrm{Unif}(0,1) = \nu$ and
   $(F_\nu)_\#\nu = \mathrm{Unif}(0,1)$ for an atomless $\nu$). No other node is used. In
   particular [](#prop:notions-coincide), [](#thm:gaussian-target) and
   [](#prop:critical-sphere) are **not** used; [](#prop:critical-sphere) and
@@ -504,7 +504,8 @@ claimed about them here.
 :::{prf:remark} Fat Cantor and singular radial supports; unbounded supports
 :label: rem:r3-cantor-unbounded
 - *Fat Cantor supports.* Let $K \subset [1,2]$ be a closed set with no interior and positive
-  Lebesgue measure, and $\mu_{\mathrm{rad}}$ the normalized Lebesgue measure on $K$. Then $\mu$ is
+  Lebesgue measure, every relatively open subset of which has positive Lebesgue measure (a
+  Smith–Volterra–Cantor set, for instance), and $\mu_{\mathrm{rad}}$ the normalized Lebesgue measure on $K$. Then $\mu$ is
   absolutely continuous, with density proportional to $\one_K(\abs{x})\,\abs{x}^{-2}$, and
   $(0,R) \setminus K$ consists of $(0,1)$ and countably many holes, dense in $[1,2]$. The proof
   applies unchanged: Step A is pointwise on $K \cap (0,R)$, and Step B treats each component

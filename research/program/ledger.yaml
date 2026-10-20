@@ -3,9 +3,9 @@
 # Formats → Ledger.
 #
 # The four statements of the 17 October 2026 scouting (prop:notions-coincide,
-# thm:gaussian-target, thm:radial-d3, thm:radial-disc-d2) have written arguments in
-# ensae-conjecture-scouting/verification/13-korba-sw/ but no certification here: they stay
-# open until a dossier passes a fresh review or a named human accepts it.
+# thm:gaussian-target, thm:radial-d3, thm:radial-disc-d2) and prop:critical-sphere were
+# certified on 20 October 2026 by fresh agent reviews (route ap:certify-scouting); no human
+# has accepted them yet.
 
 nodes:
 
@@ -33,7 +33,7 @@ nodes:
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/prop-notions-coincide.md
-        review: research/reviews/2026-10-20-prop-notions-coincide-rereview.md
+        review: research/reviews/2026-10-20-prop-notions-coincide-rereview2.md
 
   # --- singular critical points, from the literature
   - id: prop:critical-segments
@@ -57,7 +57,7 @@ nodes:
     references: [Bonnotte2013, VauthierKorbaMerigot2025]
 
   # The flow theorem is Cozzi–Santambrogio's; its consequence for critical points is drawn
-  # in VKM §7. Both refereed. Superseded by thm:gaussian-target once that is certified.
+  # in VKM §7. Both refereed. Superseded by thm:gaussian-target (proved).
   - id: thm:cs-isotropic
     status: proved
     depends_on: [def:critical-point]
@@ -75,11 +75,11 @@ nodes:
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/thm-radial-d3.md
-        review: research/reviews/2026-10-20-thm-radial-d3.md
+        review: research/reviews/2026-10-20-thm-radial-d3-rereview.md
 
   - id: thm:radial-disc-d2
     status: proved
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/thm-radial-disc-d2.md
-        review: research/reviews/2026-10-20-thm-radial-disc-d2.md
+        review: research/reviews/2026-10-20-thm-radial-disc-d2-rereview.md

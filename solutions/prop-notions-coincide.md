@@ -55,7 +55,7 @@ never used. Literature results used, all classical:
    plan $(Q_\alpha, Q_\beta)_\#\Leb|_{(0,1)}$ is the unique optimal plan for the cost
    $\abs{s-t}^2$, so that $W_2^2(\alpha,\beta) = \int_0^1 \abs{Q_\alpha - Q_\beta}^2$
    ({cite:t}`Santambrogio2015`, Theorem 2.9 with the definition of $\gamma_{\mathrm{mon}}$ in
-   §2.2, and Proposition 2.17).
+   Definition 2.3 (§2.1), and Proposition 2.17).
 2. Disintegration of a probability measure on a product of Polish spaces
    ({cite:t}`AmbrosioGigliSavare2008`, Theorem 5.3.1).
 3. Optimality of $c$-cyclically monotone plans: {cite:t}`Villani2009`, Theorem 5.10(ii),
@@ -377,7 +377,8 @@ where the integrals defining $w(x_i)$ converge since $x_i \in S_0$. With $y_i = 
 reads $\sum_i \abs{x_{i+1} - y_i}^2 - \sum_i \abs{x_i - y_i}^2 = \sum_i(\abs{x_{i+1}}^2 -
 \abs{x_i}^2) - 2\sum_i \inner{y_i}{x_{i+1} - x_i} \ge 0$: the set
 $\Gamma = \{(x, w(x)) : x \in S\}$, Borel as the graph of a Borel map on a Borel set, is
-$c$-cyclically monotone for $c(x,y) = \abs{x-y}^2$.
+$c$-cyclically monotone for $c(x,y) = \abs{x-y}^2$ (in the orientation of Villani's
+Definition 5.1, $\sum_i c(x_i,y_i) \le \sum_i c(x_i,y_{i+1})$, by reversing the order of the points).
 
 *Optimality.* The plan $\pi = (\Id,w)_\#\mu$ satisfies $\pi(\Gamma) = \mu(S) = 1$. The cost $c$
 is continuous, real-valued and nonnegative, and the optimal cost between $\mu$ and $w_\#\mu$
