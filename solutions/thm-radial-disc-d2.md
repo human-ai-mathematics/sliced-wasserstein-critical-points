@@ -397,7 +397,7 @@ so [](#prop:sol-rd2-local) applies with $a = R$: $T = \Id$ on $(-R,R)$. By
 :::{prf:remark} Audit: the critical circle
 :label: rem:sol-rd2-circle
 Let $\mu$ be the uniform probability on $r_*\Sph{1}$ and $\rho = N(0,I_2)$, critical by
-[](#prop:critical-sphere) with $d = 2$ and the first part of [](#prop:notions-coincide). It
+[](#prop:critical-sphere) with $d = 2$. It
 is radial with $\mu(\{0\}) = 0$, and $\mu_1$ (the arcsine law on $[-r_*,r_*]$) has no atom: all
 steps up to [](#lem:sol-rd2-reduction) apply, with $R = r_*$. What fails is the support
 hypothesis: there is no $a > 0$ with $B(0,a) \subset \operatorname{supp}\mu$, so

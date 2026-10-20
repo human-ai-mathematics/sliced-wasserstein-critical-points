@@ -13,7 +13,7 @@ numbering:
 
 **Overview.** We prove [](#prop:critical-sphere) as [](#thm:sol-cs-main), which also gives the radius by a
 formula: for every $d \ge 2$ there is *exactly one* radius $r_* > 0$ for which the uniform probability
-on $r_*\Sph{d-1}$ is critical for $\SW_2^2(\cdot, N(0,I_d))$, it is given by a formula,
+on $r_*\Sph{d-1}$ is critical for $\SW_2^2(\cdot, N(0,I_d))$,
 $0 < r_* < \sqrt d$, and $r_* = 3/\sqrt\pi$ when $d = 3$. The barycentric field of a sphere of
 radius $r$ is computed in closed form on the whole sphere: it is $(1 - r_*/r)\,x$. The steps
 are:
@@ -33,8 +33,9 @@ are:
 4. *Criticality* (proof of [](#thm:sol-cs-main)). Step 3 gives $v_{\mu_r} = 0$ on the sphere
    if and only if $r = r_* := dA_d$. The sphere has no atom, so item 2 of
    [](#prop:notions-coincide) turns the barycentric condition into the Wasserstein one, and
-   the Lagrangian one, of [](#def:critical-point), as [](#prop:critical-sphere) states; item 1 of
-   the same statement excludes every other radius, which is the uniqueness it asserts.
+   the Lagrangian one, of [](#def:critical-point), as [](#prop:critical-sphere) states. The uniqueness it
+   asserts is the "if and only if" above; item 1 of the same statement shows that no other
+   radius is a Lagrangian or a Wasserstein critical point either.
 5. *Dimension three* ([](#lem:sol-cs-d3)). There $\zeta_3$ is uniform on $[-1,1]$
    (Archimedes), $\tau(Z)$ and $Z$ are linked by $Z = 2\Phi(\tau(Z)) - 1$, and a Gaussian
    integration by parts gives $A_3 = 1/\sqrt\pi$.
@@ -89,7 +90,7 @@ Then:
 4. For $d = 3$, $r_* = 3/\sqrt\pi$.
 :::
 
-Items 1, 3 and 4 together are [](#prop:critical-sphere), for the explicit radius $r_* > 0$
+Items 1, 3 and 4 together give [](#prop:critical-sphere), for the explicit radius $r_* > 0$
 above: $\mu_{r_*}$ is critical in all three senses, and no other radius is.
 
 ## The projections of the uniform sphere
@@ -344,7 +345,7 @@ density and the sphere is Lebesgue-null; so $\mu_{r_*} \ne \rho$.
 
 *4.* This is [](#lem:sol-cs-d3).
 
-Since $r_* > 0$, $\mu_{r_*}$ is a critical, a Lagrangian and a Wasserstein critical point, no
+Since $0 < r_* < \sqrt d$, $\mu_{r_*}$ is a critical, a Lagrangian and a Wasserstein critical point, no
 other radius is any of the three, and item 4 holds, items 1, 3 and 4 give
 [](#prop:critical-sphere).
 :::

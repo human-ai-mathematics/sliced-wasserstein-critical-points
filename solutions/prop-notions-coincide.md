@@ -11,9 +11,10 @@ numbering:
 % authority. Normalizations: those of def:sliced-wasserstein and def:barycentric-field
 % (sigma a probability, factor d in v_mu).
 
-**Overview.** We prove [](#prop:notions-coincide) in a sharper form,
-[](#thm:sol-nc-main): the first part holds for every $\mu,\rho \in \Ptwo{d}$, and the second
-holds as soon as $\mu$ has no atom, which absolute continuity implies. The steps are:
+**Overview.** We prove [](#prop:notions-coincide) as [](#thm:sol-nc-main): part (a) is its
+first item, for every $\mu,\rho \in \Ptwo{d}$, and part (b) with part (a) is its second item,
+for $\mu$ with no atom; beyond the statement, the theorem gives the derivative formulas. The
+steps are:
 
 1. *A jointly measurable version of the barycentric projections*
    ([](#lem:sol-nc-version)). From the quantile functions we build one Borel function
@@ -43,8 +44,7 @@ holds as soon as $\mu$ has no atom, which absolute continuity implies. The steps
 
 [](#rem:sol-nc-singular) explains how the equivalence behaves for the singular critical
 points (sphere, segments) and gives the example of $\delta_0$, which shows that the converse
-fails for measures with atoms. Absolute continuity is used nowhere beyond the absence of
-atoms.
+fails for measures with atoms. Nothing is assumed on $\mu$ beyond the absence of atoms.
 
 **Dependencies.** The definitions [](#def:sliced-wasserstein), [](#def:barycentric-field)
 and [](#def:critical-point). No other result of the manuscript is used; in particular
@@ -105,9 +105,9 @@ $\gamma \in \mathcal P(\R^d\times\R^d)$ write $\pi^1, \pi^2$ for the coordinate 
 
 ## Refined statement
 
-The following sharpens [](#prop:notions-coincide): part (a) is its first item, with a single
-test curve; part (b) replaces absolute continuity by the absence of atoms and gives the
-derivative.
+The following proves [](#prop:notions-coincide): part (a) is its first item, with a single
+test curve; part (b), for $\mu$ with no atom, gives with part (a) its second item, and gives
+the derivative as well.
 
 :::{prf:theorem} The notions of critical point coincide for atomless measures
 :label: thm:sol-nc-main
@@ -143,8 +143,8 @@ Hence, for a measure $\mu$ with no atom — in particular for an absolutely cont
 the three notions of critical point of [](#def:critical-point) coincide.
 :::
 
-Part (a) is the first item of [](#prop:notions-coincide). An absolutely continuous measure
-has no atom, so part (b) together with part (a) gives its second item. No assumption is
+Part (a) is the first item of [](#prop:notions-coincide), and part (b) together with
+part (a) gives its second item, for $\mu$ with no atom. No assumption is
 made on $\rho$ beyond $\rho \in \Ptwo{d}$, and none on the supports.
 
 ## A measurable version of the barycentric projections
@@ -584,8 +584,8 @@ $\tfrac2d\int\inner{v_\mu(x)}{y-x}\dd\gamma$. If $v_\mu = 0$ $\mu$-a.e., all the
 vanish, so $\mu$ is a Lagrangian and a Wasserstein critical point. With (a), the three notions
 coincide for $\mu$.
 
-*The manuscript statement.* Its first item is (a). For its second, an absolutely continuous
-$\mu$ has no atom, so (a) and (b) apply.
+*The manuscript statement.* Its first item is (a). Its second, for $\mu$ with no atom, is
+(a) with (b).
 :::
 
 ## Remarks
@@ -602,8 +602,8 @@ $\mu$ has no atom, so (a) and (b) apply.
   optimal plans, whether or not they are induced by maps.
 - *The sphere and the segments.* The uniform measure on $r\Sph{d-1}$ ($d \ge 2$) and the
   measures of [](#prop:critical-segments) have no atom. By [](#thm:sol-nc-main), for them the
-  three notions coincide as well: the sphere of [](#prop:critical-sphere), stated there as a
-  Wasserstein critical point, is a critical point and a Lagrangian critical point, and the
+  three notions coincide as well: the sphere of [](#prop:critical-sphere) is critical in all
+  three senses, as stated there, and the
   segments, stated as critical points, are also Lagrangian and Wasserstein critical points.
   (This uses only the statements of those two results, which are proved separately.)
   Consequently, the equivalence of notions cannot be where a proof of [](#conj:sw-critical)

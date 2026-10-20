@@ -33,7 +33,7 @@ nodes:
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/prop-notions-coincide.md
-        review: research/reviews/2026-10-20-prop-notions-coincide-rereview2.md
+        review: research/reviews/2026-10-20-prop-notions-coincide-rereview3.md
 
   # --- singular critical points, from the literature
   - id: prop:critical-segments
@@ -48,7 +48,7 @@ nodes:
     references: [DiazMartinMurphy2026]
     proofs:
       - artifact: solutions/prop-critical-sphere.md
-        review: research/reviews/2026-10-20-prop-critical-sphere-rereview2.md
+        review: research/reviews/2026-10-20-prop-critical-sphere-rereview3.md
 
   # --- special cases
   - id: thm:bonnotte-full-support
