@@ -48,7 +48,7 @@ nodes:
     references: [DiazMartinMurphy2026]
     proofs:
       - artifact: solutions/prop-critical-sphere.md
-        review: research/reviews/2026-10-20-sharpened-statements-rereview.md
+        review: research/reviews/2026-10-20-prop-critical-sphere-rereview2.md
 
   # --- special cases
   - id: thm:bonnotte-full-support

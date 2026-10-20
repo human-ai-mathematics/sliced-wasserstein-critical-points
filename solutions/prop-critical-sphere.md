@@ -11,8 +11,8 @@ numbering:
 % rem:sol-cs-source and is not used as authority. Normalizations: those of
 % def:sliced-wasserstein and def:barycentric-field (sigma a probability, factor d in v_mu).
 
-**Overview.** We prove [](#prop:critical-sphere) in a sharper form, [](#thm:sol-cs-main):
-for every $d \ge 2$ there is *exactly one* radius $r_* > 0$ for which the uniform probability
+**Overview.** We prove [](#prop:critical-sphere) as [](#thm:sol-cs-main), which also gives the radius by a
+formula: for every $d \ge 2$ there is *exactly one* radius $r_* > 0$ for which the uniform probability
 on $r_*\Sph{d-1}$ is critical for $\SW_2^2(\cdot, N(0,I_d))$, it is given by a formula,
 $0 < r_* < \sqrt d$, and $r_* = 3/\sqrt\pi$ when $d = 3$. The barycentric field of a sphere of
 radius $r$ is computed in closed form on the whole sphere: it is $(1 - r_*/r)\,x$. The steps
@@ -32,9 +32,9 @@ are:
    $v_{\mu_r}(x) = (r - dA_d)\,e$ at every point $x = re$ of the sphere.
 4. *Criticality* (proof of [](#thm:sol-cs-main)). Step 3 gives $v_{\mu_r} = 0$ on the sphere
    if and only if $r = r_* := dA_d$. The sphere has no atom, so item 2 of
-   [](#prop:notions-coincide) turns the barycentric condition into the Wasserstein one of
-   [](#def:critical-point), which is what [](#prop:critical-sphere) states; item 1 of the
-   same statement excludes every other radius.
+   [](#prop:notions-coincide) turns the barycentric condition into the Wasserstein one, and
+   the Lagrangian one, of [](#def:critical-point), as [](#prop:critical-sphere) states; item 1 of
+   the same statement excludes every other radius, which is the uniqueness it asserts.
 5. *Dimension three* ([](#lem:sol-cs-d3)). There $\zeta_3$ is uniform on $[-1,1]$
    (Archimedes), $\tau(Z)$ and $Z$ are linked by $Z = 2\Phi(\tau(Z)) - 1$, and a Gaussian
    integration by parts gives $A_3 = 1/\sqrt\pi$.
@@ -60,9 +60,9 @@ $\inner{e}{\Theta}$, $\Theta \sim \sigma$.
 
 ## Refined statement
 
-The following sharpens [](#prop:critical-sphere): it gives uniqueness of the radius, a
-formula for it and its value in dimension three, and it proves all three notions of
-criticality of [](#def:critical-point).
+The following proves [](#prop:critical-sphere) and adds to it a formula for the radius, the
+closed-form barycentric field of every centred sphere, and the fact that the critical sphere
+differs from the target.
 
 :::{prf:theorem} The critical sphere of a standard Gaussian target
 :label: thm:sol-cs-main
@@ -89,8 +89,8 @@ Then:
 4. For $d = 3$, $r_* = 3/\sqrt\pi$.
 :::
 
-Item 3 contains [](#prop:critical-sphere), which asks for some $r_* > 0$ such that
-$\mu_{r_*}$ is a Wasserstein critical point.
+Items 1, 3 and 4 together are [](#prop:critical-sphere), for the explicit radius $r_* > 0$
+above: $\mu_{r_*}$ is critical in all three senses, and no other radius is.
 
 ## The projections of the uniform sphere
 
@@ -344,8 +344,9 @@ density and the sphere is Lebesgue-null; so $\mu_{r_*} \ne \rho$.
 
 *4.* This is [](#lem:sol-cs-d3).
 
-Since $r_* > 0$ and $\mu_{r_*}$ is a Wasserstein critical point, [](#prop:critical-sphere)
-follows.
+Since $r_* > 0$, $\mu_{r_*}$ is a critical, a Lagrangian and a Wasserstein critical point, no
+other radius is any of the three, and item 4 holds, items 1, 3 and 4 give
+[](#prop:critical-sphere).
 :::
 
 ## Remarks

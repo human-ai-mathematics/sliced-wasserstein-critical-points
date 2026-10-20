@@ -11,9 +11,9 @@ numbering:
 % (see the proofs[] record in the ledger). Normalizations: those of
 % def:sliced-wasserstein and def:barycentric-field (sigma a probability, factor d = 3).
 
-**Overview.** We prove [](#thm:radial-d3) in a slightly sharper form,
-[](#thm:sol-radial-d3): instead of "the law of $\abs{X}$ has no atom" it suffices that this law
-has no atom at $0$ and that its support has no isolated point. The target $\rho$ is any
+**Overview.** We prove [](#thm:radial-d3) as [](#thm:sol-radial-d3), under its hypotheses:
+the law of $\abs{X}$ has no atom at $0$ and its support has no isolated point; "the law of
+$\abs{X}$ has no atom" is the special case named in its final clause. The target $\rho$ is any
 rotation-invariant measure of $\Ptwo{3}$: atoms (necessarily at $0$), singular parts and
 unbounded supports are allowed, and $\mu$ need not be absolutely continuous nor compactly
 supported. The steps are:
@@ -78,7 +78,7 @@ rotation-invariant $\mu, \rho \in \Ptwo{3}$ and put
 
 ## Statement
 
-**Refined statement.** [](#thm:sol-radial-d3) below contains [](#thm:radial-d3): if the law
+**Refined statement.** [](#thm:sol-radial-d3) below is [](#thm:radial-d3), and its final clause holds: if the law
 $\mu_{\mathrm{rad}}$ of $\abs{X}$ has no atom, then $\mu_{\mathrm{rad}}(\{0\}) = 0$ and its support
 has no isolated point (an isolated point $r$ of the support has a neighbourhood $U$ with
 $\mu_{\mathrm{rad}}(U) = \mu_{\mathrm{rad}}(\{r\}) > 0$). The hypotheses on $\rho$ are those of
@@ -443,7 +443,7 @@ so $\hat\mu = \hat\rho$ and $\mu = \rho$ (Cramér–Wold).
 - Atoms of $\mu_{\mathrm{rad}}$ at points of $(0,\infty)$ that are not isolated in $K$ are
   allowed: for instance $\mu_{\mathrm{rad}} = \tfrac12\delta_1 + \tfrac12\mathrm{U}[1,2]$, a
   measure that is not absolutely continuous, is covered. Their projections are still
-  atomless. This is the sharpening over [](#thm:radial-d3).
+  atomless. This is why [](#thm:radial-d3) does not require the radial law to be atomless.
 - On $\rho$: only rotation invariance and $\rho \in \Ptwo{3}$ (for [](#def:barycentric-field)
   to apply) are used. An atom $\rho_0 > 0$ at the origin only adds the flat piece
   $Q = 0$ on $[\tfrac12, \tfrac{1+\rho_0}{2}]$ in [](#lem:r3-quantile) (3), which keeps $Q$ convex

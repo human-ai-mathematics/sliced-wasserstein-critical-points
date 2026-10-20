@@ -12,8 +12,8 @@ numbering:
 % Normalizations: def:sliced-wasserstein (sigma a probability) and def:barycentric-field
 % (factor d = 2 in v_mu).
 
-**Overview.** We prove [](#thm:radial-disc-d2) in a sharper form, [](#thm:sol-rd2-main):
-absolute continuity of $\mu$ is replaced by $\mu(\{0\}) = 0$; $\rho$ is an arbitrary radial
+**Overview.** We prove [](#thm:radial-disc-d2) as [](#thm:sol-rd2-main):
+absolute continuity of $\mu$ is not assumed, only $\mu(\{0\}) = 0$; $\rho$ is an arbitrary radial
 measure of $\Ptwo{2}$ (no density, atoms allowed, unbounded support allowed); the disc may
 have any radius $R \in (0,\infty)$, or be the whole plane ($R = \infty$). A local version,
 [](#prop:sol-rd2-local), shows that the monotone map is the identity on $(-a,a)$ as soon as
@@ -99,9 +99,9 @@ with support either $\overline B(0,R)$ for some $R \in (0,\infty)$, or $\R^2$. I
 critical point of $\SW_2^2(\cdot,\rho)$ ([](#def:critical-point)), then $\mu = \rho$.
 :::
 
-This implies [](#thm:radial-disc-d2): an absolutely continuous $\mu$ has $\mu(\{0\}) = 0$, and
-its support, a closed disc centred at $0$ or the plane, is not $\{0\}$, so the disc has a
-radius $R > 0$. No hypothesis on $\rho$ beyond radial symmetry and a finite second moment is
+This is [](#thm:radial-disc-d2): its hypothesis $\mu(\{0\}) = 0$ is the manuscript's, and its
+support is a closed disc centred at $0$ of radius $R > 0$, hence not $\{0\}$, or the plane;
+absolute continuity of $\mu$ is not assumed. No hypothesis on $\rho$ beyond radial symmetry and a finite second moment is
 used; no density of $\mu$ is used either.
 
 :::{prf:proposition} The local statement
