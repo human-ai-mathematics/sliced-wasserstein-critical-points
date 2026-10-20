@@ -110,10 +110,10 @@ isolated point; both hold when that law has no atom. If $\mu$ is a critical poin
 $\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
-The proof gives more: it suffices that $\mu$ give no mass to the origin and that the support
-of the law of $\abs{X}$ have no isolated point. The target may be any rotation-invariant
-measure with a finite second moment, with an atom at the origin, a singular part or an
-unbounded support; $\mu$ need be neither absolutely continuous nor compactly supported.
+The hypotheses on $\mu$ bear only on its mass at the origin and on the shape of its radial
+support: $\mu$ need be neither absolutely continuous nor compactly supported. The target may
+be any rotation-invariant measure with a finite second moment, with an atom at the origin, a
+singular part or an unbounded support.
 
 **Idea of the proof.** Two features are special to dimension three. The condition is
 *local*: the left-hand side above is a primitive, and since the radial support has no
@@ -141,9 +141,8 @@ radius centred at the origin or the whole plane. If $\mu$ is a critical point of
 $\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
-Here too the proof gives more: absolute continuity of $\mu$ is replaced by
-$\mu(\{0\}) = 0$, and $\rho$ may be any rotation-invariant measure with a finite second moment.
-A local form holds as well: if the open disc $B(0,a)$ lies in the support of $\mu$, the
+Here too $\mu$ need not be absolutely continuous, and $\rho$ may be any rotation-invariant
+measure with a finite second moment. The proof gives a local form as well: if the open disc $B(0,a)$ lies in the support of $\mu$, the
 monotone map is the identity on $(-a,a)$.
 
 **Idea of the proof.** In the plane the condition becomes an Abel equation: with

@@ -93,10 +93,11 @@ The general question ([](#conj:sw-critical)) is not settled here. What is proved
   of {cite:t}`DiazMartinMurphy2026`, reproved here with the uniqueness and the bound);
 - every Gaussian target, isotropic or not, is the only absolutely continuous critical point
   for itself, with no entropy hypothesis ([](#thm:gaussian-target));
-- in dimension three, a rotation-invariant critical point whose radial law has no atom is the
+- in dimension three, a rotation-invariant critical point with no mass at the origin whose
+  radial support has no isolated point (for instance, whose radial law has no atom) is the
   target ([](#thm:radial-d3));
-- in the plane, a rotation-invariant critical point whose support is a full disc or the whole
-  plane is the target ([](#thm:radial-disc-d2)).
+- in the plane, a rotation-invariant critical point with no mass at the origin whose support
+  is a full disc or the whole plane is the target ([](#thm:radial-disc-d2)).
 
 Several proofs give somewhat more than the statement, as the text after each one says.
 These proofs have been checked by independent reviews carried out by AI agents, not yet by

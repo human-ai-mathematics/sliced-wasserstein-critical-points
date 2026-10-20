@@ -34,7 +34,9 @@ $r_* = 3/\sqrt\pi$ when $d = 3$.
 :::
 
 This is Example 1 of {cite:t}`DiazMartinMurphy2026`; the proof given here is direct and
-does not rely on theirs. It proves more. All projections of the uniform probability
+does not rely on theirs.
+
+**Idea of the proof.** All projections of the uniform probability
 $\mu_r$ on $r\Sph{d-1}$ have one law, that of $r Z$ with $Z = \inner{e}{\Theta}$, $\Theta \sim \sigma$,
 so every monotone map is the same function $s \mapsto \Phi^{-1}(H(s/r))$, with $H$ the
 distribution function of $Z$. At a point $x = re$, reflections fixing $e$ kill the part of the
@@ -45,7 +47,7 @@ v_{\mu_r}(x) = \Big(1 - \frac{r_*}{r}\Big)x, \qquad r_* = d\,A_d, \quad
 A_d = \E\big[Z\,\Phi^{-1}(H(Z))\big] .
 $$
 
-So there is exactly one critical radius, and $0 < r_* < \sqrt d$: the critical sphere has a
+This gives the uniqueness of the radius and the bound $0 < r_* < \sqrt d$: the critical sphere has a
 smaller second moment than the target. In dimension three $Z$ is uniform on $[-1,1]$
 (Archimedes) and $r_* = 3/\sqrt\pi$, the value computed by hand in [](#sec:overview); no
 closed form is given here in other dimensions. The sphere has no atom, so by
