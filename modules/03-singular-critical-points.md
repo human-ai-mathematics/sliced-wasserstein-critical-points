@@ -27,8 +27,10 @@ show that such segments are unstable for a suitable perturbation.
 
 :::{prf:proposition} A critical sphere
 :label: prop:critical-sphere
-Let $d \ge 2$ and $\rho = N(0, I_d)$. There exists $r_* > 0$ such that the uniform probability
-measure on the sphere $r_*\Sph{d-1}$ is a Wasserstein critical point of $\SW_2^2(\cdot,\rho)$.
+Let $d \ge 2$ and $\rho = N(0, I_d)$. There is exactly one $r_* > 0$ such that the uniform
+probability measure on the sphere $r_*\Sph{d-1}$ is a critical point of $\SW_2^2(\cdot,\rho)$.
+It is also a Lagrangian and a Wasserstein critical point, $r_* < \sqrt d$, and
+$r_* = 3/\sqrt\pi$ when $d = 3$.
 :::
 
 This is Example 1 of {cite:t}`DiazMartinMurphy2026`; the proof given here is direct and

@@ -48,7 +48,7 @@ nodes:
     references: [DiazMartinMurphy2026]
     proofs:
       - artifact: solutions/prop-critical-sphere.md
-        review: research/reviews/2026-10-20-prop-critical-sphere-rereview.md
+        review: research/reviews/2026-10-20-sharpened-statements-rereview.md
 
   # --- special cases
   - id: thm:bonnotte-full-support
@@ -75,11 +75,11 @@ nodes:
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/thm-radial-d3.md
-        review: research/reviews/2026-10-20-thm-radial-d3-rereview2.md
+        review: research/reviews/2026-10-20-sharpened-statements-rereview.md
 
   - id: thm:radial-disc-d2
     status: proved
     depends_on: [def:critical-point]
     proofs:
       - artifact: solutions/thm-radial-disc-d2.md
-        review: research/reviews/2026-10-20-thm-radial-disc-d2-rereview.md
+        review: research/reviews/2026-10-20-sharpened-statements-rereview.md

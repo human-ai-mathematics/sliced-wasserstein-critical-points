@@ -104,8 +104,9 @@ $$
 
 :::{prf:theorem} Radial measures in dimension three
 :label: thm:radial-d3
-Let $\rho \in \Ptwo{3}$ and $\mu \in \Ptwo{3}$ be invariant under rotations, and assume that the
-law of $\abs{X}$, for $X \sim \mu$, has no atom. If $\mu$ is a critical point of
+Let $\rho \in \Ptwo{3}$ and $\mu \in \Ptwo{3}$ be invariant under rotations. Assume that
+$\mu(\{0\}) = 0$ and that the support of the law of $\abs{X}$, for $X \sim \mu$, has no
+isolated point; both hold when that law has no atom. If $\mu$ is a critical point of
 $\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
@@ -135,9 +136,9 @@ even dimension the condition becomes non-local.
 :::{prf:theorem} Radial measures on a full disc in the plane
 :label: thm:radial-disc-d2
 Let $\rho \in \Ptwo{2}$ be invariant under rotations, and let $\mu \in \Ptwo{2}$ be
-absolutely continuous and invariant under rotations, with support a closed disc centred at
-the origin or the whole plane. If $\mu$ is a critical point of $\SW_2^2(\cdot,\rho)$, then
-$\mu = \rho$.
+invariant under rotations, with $\mu(\{0\}) = 0$ and with support a closed disc of positive
+radius centred at the origin or the whole plane. If $\mu$ is a critical point of
+$\SW_2^2(\cdot,\rho)$, then $\mu = \rho$.
 :::
 
 Here too the proof gives more: absolute continuity of $\mu$ is replaced by
